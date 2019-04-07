@@ -1,2 +1,0 @@
-# hellopython
-Study python
