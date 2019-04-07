@@ -58,4 +58,5 @@ else:
 
 print("After while")
 
+# now let's go to projects/guess_game
 # good place to continue https://learnxinyminutes.com/docs/python3/
