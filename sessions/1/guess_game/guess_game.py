@@ -1,12 +1,10 @@
 import random
-import sys
 
 wrong_hits = 0
 correct_hits = 0
 while True:
     picked = random.randint(1, 3)
-    print("Your guess: ", end='', flush=True)
-    guess = sys.stdin.readline().rstrip()
+    guess = input("Your guess: ")
     if guess == "":
         break
     if guess == str(picked):
