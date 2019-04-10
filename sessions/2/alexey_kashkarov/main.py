@@ -14,7 +14,6 @@ def read_file(f_name):
 
 
 words = read_file("dict.txt")
-i = 0
 while len(words) > 0:
     word = words.pop()
     anagrams = generate_anagrams(word)
