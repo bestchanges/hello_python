@@ -1,6 +1,6 @@
 kalambas, words, reversi = ({}, {}, [])
 
-with open("dict.txt") as file:
+with open("../dict.txt") as file:
     for line in file:
         words[line.rstrip()] = 1
 

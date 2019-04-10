@@ -10,7 +10,7 @@ def string_cycler(input_str):
 
 dict = set()
 
-with open('dict.txt') as dict_file:
+with open('../dict.txt') as dict_file:
     for line in dict_file:
         dict.add(line.strip())
 
