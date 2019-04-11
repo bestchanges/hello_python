@@ -1,45 +1,58 @@
 # Study Plan
 
 ## Session 1
-- intro: zen, code_style
+- intro: projects, zen, code_style
 - install & setup (PyCharm)
-- venv, pip
 - run, debug, python console
 - types (numbers, strings, bool)
 - read/write stdin/stdout
 - variables
-- control flow (if, while)
-- projects/guess_game
+- control flow (if, for, while)
++ projects: guess_game
 
 ## Session 2
 - complex types (tuple, array, dict, set)
 - iterables, with statement
-- ? exceptions
-- functions, scope
-- projects/kalimbas
-- projects/happy_tickets
-- projects/prime_numbers
+- exceptions
++ projects/kalimbas
 
 ## Session 3
-- CLI args
-- packages, pip
+- iterators, generators
+- variables scope
+- functions, lambda-functions
+- files IO 
 - __main__
-- classes, OOP, duck types
-- ? generators
-- projects/github_languages_popularity
-- projects/todoist_automation
++ projects/happy_tickets
++ projects/prime_numbers
++ projects/gallow_game
 
-## Session 4
-- decorators
-- notworking
-- projects/chat_service
-- projects/gimblet_online_game
-- projects/currency_exchange_rates
 
-## Session 5
+## Session 
+- assert
 - unit testing
 - coverage
 - Test Driven Development
+
+
+
+## Session 4
+- packages, venv, pip
+- networking
+- JSON print/parse
+- CLI args
++ projects/github_languages_popularity
++ projects/todoist_automation
++ projects/currency_exchange_rates
+
+
+
+
+- decorators
++ projects/chat_service
++ projects/gimblet_online_game
+
+
+- classes, OOP, duck types
 
 ## Session 6
 - QA automation
