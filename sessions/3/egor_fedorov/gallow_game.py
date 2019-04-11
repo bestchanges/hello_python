@@ -13,9 +13,8 @@ def decode_word(word, tries):
 
 
 def count_tries(word, letters):
-    global missed
     missed = ''
-    for l in tried_letters:
+    for l in letters:
         if not l in word:
             missed += l
     return len(missed)
