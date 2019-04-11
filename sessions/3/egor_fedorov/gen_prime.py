@@ -4,6 +4,7 @@ import time
 
 def primes():
     global sqrt_operations
+    sqrt_operations = 0
     primes = []
     candidate = 1
     while True:
@@ -36,7 +37,7 @@ def primes_optimized():
             search_till_index += 1
             search_till_sqr = primes[search_till_index] ** 2
             sqr_operations += 1
-            #print(f'{candidate} search till {primes[search_till_index]} (for max of {search_till_sqr})')
+            # print(f'{candidate} search till {primes[search_till_index]} (for max of {search_till_sqr})')
 
         is_prime = True
         for index in range(1, search_till_index + 1):
@@ -59,11 +60,13 @@ def next_n(g, n):
 
 sqrt_operations = 0
 sqr_operations = 0
-num_of_primes = 100000
+num_of_primes = 300000
 for gen in (primes(), primes_optimized()):
     start = time.time()
     last_prime = next_n(gen, num_of_primes)
     end = time.time()
-    print(f"It took {int(end - start)} sec to find first {num_of_primes} of primes by {gen}. And it's value {last_prime}")
+    print(f"It took {int(end - start)} sec "
+          f"to find first {num_of_primes} of primes by {gen}. "
+          f"And it's value {last_prime}")
 print(f'Number of sqr operations: {sqr_operations}')
 print(f'Number of sqrt operations: {sqrt_operations}')
