@@ -77,6 +77,6 @@ def exhaust_iterator(iter: Iterable):
     return counter, finish - start
 
 
-for iter in [happy_tickets_optimized, happy_tickets, happy_tickets_str_f, happy_tickets_str_format, happy_tickets_str_percent]:
+for iter in (happy_tickets_optimized, happy_tickets, happy_tickets_str_f, happy_tickets_str_format, happy_tickets_str_percent):
     value, runtime = exhaust_iterator(iter())
     print(f"Found {value} time: {runtime:.2} Iter: {iter}")
