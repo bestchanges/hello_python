@@ -71,12 +71,12 @@ def happy_tickets_str_format(start_from=0):
 def exhaust_iterator(iter: Iterable):
     counter = 0
     start = time.time()
-    for item in iter():
+    for item in iter:
         counter += 1
     finish = time.time()
     return counter, finish - start
 
 
 for iter in [happy_tickets_optimized, happy_tickets, happy_tickets_str_f, happy_tickets_str_format, happy_tickets_str_percent]:
-    value, runtime = exhaust_iterator(iter)
+    value, runtime = exhaust_iterator(iter(900000))
     print(f"Found {value} time: {runtime:.2} Iter: {iter}")
