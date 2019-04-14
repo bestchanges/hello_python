@@ -1,12 +1,7 @@
 def is_palindrome(word_to_check):
-    word_length = len(word_to_check)
-    i = 0
-    while i < word_length:
-        if word_to_check[i] != word_to_check[word_length - 1]:
-            return False
-        i = i + 1
-        word_length = word_length - 1
-    return True
+    reversed_word = word_to_check[::-1]
+    if reversed_word == word_to_check:
+        return True
 
 
 def read_file(file_name):
