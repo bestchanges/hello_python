@@ -7,7 +7,7 @@
 [![Hello Python Session 3](http://img.youtube.com/vi/Qe1TE5hPE5w/0.jpg)](http://www.youtube.com/watch?v=Qe1TE5hPE5w "Hello Python Session 3")
 
 # Material
-- 4. Functions https://learnxinyminutes.com/docs/ru-ru/python3-ru/
+- Functions (part 4) https://learnxinyminutes.com/docs/ru-ru/python3-ru/
 - functions https://www.youtube.com/watch?v=9Os0o3wzS_I
 - generators https://www.youtube.com/watch?v=bD05uGo_sVI
 
