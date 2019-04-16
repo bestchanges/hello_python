@@ -29,6 +29,22 @@ def happy_tickets_optimized(start_from=0):
         v += 1
 
 
+def happy_tickets_simplified(start_from=0):
+    v = start_from
+    while True:
+        if v >= 1000000:
+            return
+        digits = []
+        v1 = v
+        for i in range(6):
+            digits.append(v1 % 10)
+            v1 = v1 // 10
+        assert len(digits) == 6
+        if sum(digits[0:3]) == sum(digits[-3:]):
+            yield ''.join([str(i) for i in digits])
+        v += 1
+
+
 def happy_tickets_str_percent(start_from=0):
     v = start_from
     while True:
@@ -77,6 +93,6 @@ def exhaust_iterator(iter: Iterable):
     return counter, finish - start
 
 
-for iter in (happy_tickets_optimized, happy_tickets, happy_tickets_str_f, happy_tickets_str_format, happy_tickets_str_percent):
+for iter in (happy_tickets_optimized, happy_tickets_simplified, happy_tickets, happy_tickets_str_f, happy_tickets_str_format, happy_tickets_str_percent):
     value, runtime = exhaust_iterator(iter())
     print(f"Found {value} time: {runtime:.2} Iter: {iter}")

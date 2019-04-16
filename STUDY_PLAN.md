@@ -12,30 +12,30 @@
 
 ## Session 2
 - complex types (tuple, array, dict, set)
-- iterables, with statement
+- iterables, with statement (need to repeat)
 - exceptions
 + projects/kalimbas
 
 ## Session 3
-- iterators, generators
-- variables scope
-- functions, lambda-functions
-- files IO 
-- __main__
+- functions
+- lambda-functions 
+- generators 
 + projects/happy_tickets
 + projects/prime_numbers
 + projects/gallow_game
 
-
-## Session 
+## Session 4
+- [modules](https://www.youtube.com/watch?v=CqvZ3vGoGs0&t=367s)
+- [__main__](https://www.youtube.com/watch?v=sugvnHA7ElY)
+- files IO
+- project: GUI
+ 
+- variables scope https://www.youtube.com/watch?v=QVdf0LgmICw
 - assert
 - unit testing
 - coverage
 - Test Driven Development
-
-
-
-## Session 4
+- iterators
 - packages, venv, pip
 - networking
 - JSON print/parse
@@ -43,15 +43,9 @@
 + projects/github_languages_popularity
 + projects/todoist_automation
 + projects/currency_exchange_rates
-
-
-
-
 - decorators
 + projects/chat_service
 + projects/gimblet_online_game
-
-
 - classes, OOP, duck types
 
 ## Session 6
