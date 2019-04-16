@@ -15,6 +15,7 @@
 - string formatting https://www.youtube.com/watch?v=vTX3IwquFkc
 - booleans https://www.youtube.com/watch?v=DZwmZ8Usvnk
 - numbers https://www.youtube.com/watch?v=khKv-8q7YmY
+- slicing lists and strings https://www.youtube.com/watch?v=ajrtAuDg3yw
 
 ## Projects
 - guess_game
