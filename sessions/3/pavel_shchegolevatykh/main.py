@@ -1,6 +1,12 @@
 import random
 
 
+def get_lucky_number():
+    for num in range(100000, 999999):
+        if is_lucky(num):
+            yield num
+
+
 def is_lucky(six_digit_number):
     sum_last_three = 0
     sum_first_three = 0
@@ -14,10 +20,7 @@ def is_lucky(six_digit_number):
 
 
 lucky_numbers = []
-for num in range(100000, 999999):
-    if is_lucky(num):
-        lucky_numbers.append(num)
+for lucky_number in get_lucky_number():
+    lucky_numbers.append(lucky_number)
 
-lucky_number = random.choice(lucky_numbers)
-
-print(lucky_number)
+print(random.choice(lucky_numbers))
