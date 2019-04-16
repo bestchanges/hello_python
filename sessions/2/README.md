@@ -7,7 +7,6 @@
 - exceptions
 
 ## Screencast
-- https://www.youtube.com/watch?v=rDiLYYKcfYo&list=PL695GIIYoAhbrVyzkqYvVuNqEBHqnNqQl&index=3&t=0s
 [![Hello Python Session 2](http://img.youtube.com/vi/rDiLYYKcfYo/0.jpg)](http://www.youtube.com/watch?v=rDiLYYKcfYo "Hello Python Session 2")
 
 ## Materials
