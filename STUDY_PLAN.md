@@ -31,6 +31,7 @@
 - project: GUI
  
 - variables scope https://www.youtube.com/watch?v=QVdf0LgmICw
+- sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
 - assert
 - unit testing
 - coverage
