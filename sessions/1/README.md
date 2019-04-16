@@ -7,9 +7,13 @@
 - variables
 - control flow (if, for, while)
 
+## Screencast
+[![Hello Python Session 1](http://img.youtube.com/vi/uwJHd9WUL6s/0.jpg)](http://www.youtube.com/watch?v=uwJHd9WUL6s "Hello Python Session 1 ")
+
 ## Materials
 - https://pythoner.name/documentation/tutorial/introduction
 - https://pythoner.name/documentation/tutorial/tools
+- https://pythoner.name/documentation/tutorial/output
 - (part 1,3) https://learnxinyminutes.com/docs/python3/
 - strings https://www.youtube.com/watch?v=ajrtAuDg3yw
 - string formatting https://www.youtube.com/watch?v=vTX3IwquFkc
@@ -23,5 +27,3 @@
 Пользователь пытается угадать какое число было загадано и вводит ответ на клавиатуре.
 Игра сообщает был ли ответ верным. По окончании игры игра сообщает % верных ответов.
 
-## Screencast
-[![Hello Python Session 1](http://img.youtube.com/vi/uwJHd9WUL6s/0.jpg)](http://www.youtube.com/watch?v=uwJHd9WUL6s "Hello Python Session 1 ")
