@@ -11,6 +11,10 @@
 - https://pythoner.name/documentation/tutorial/introduction
 - https://pythoner.name/documentation/tutorial/tools
 - (part 1,3) https://learnxinyminutes.com/docs/python3/
+- strings https://www.youtube.com/watch?v=ajrtAuDg3yw
+- string formatting https://www.youtube.com/watch?v=vTX3IwquFkc
+- booleans https://www.youtube.com/watch?v=DZwmZ8Usvnk
+- numbers https://www.youtube.com/watch?v=khKv-8q7YmY
 
 ## Projects
 - guess_game
