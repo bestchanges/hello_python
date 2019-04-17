@@ -8,6 +8,9 @@
 
 # Material
 - Functions (part 4) https://learnxinyminutes.com/docs/ru-ru/python3-ru/
+- keyword args 
+- [doc strings](https://www.python.org/dev/peps/pep-0257/)
+- [immutable args](https://docs.quantifiedcode.com/python-anti-patterns/correctness/mutable_default_value_as_argument.html)
 - functions https://www.youtube.com/watch?v=9Os0o3wzS_I
 - generators https://www.youtube.com/watch?v=bD05uGo_sVI
 
