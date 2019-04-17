@@ -44,7 +44,7 @@ def all_currencies():
     return all_base_currencies() | all_quote_currencies()
 
 
-def exchange_to_many(value, base_currency, quote_currencies=None):
+def exchange_to_many(value, base_currency):
     result = []
     for pair, rate in quotes.items():
         base, quote = pair.split('/')
