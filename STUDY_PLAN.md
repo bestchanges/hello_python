@@ -41,6 +41,7 @@
 - networking
 - JSON print/parse
 - CLI args
+- type hints https://www.python.org/dev/peps/pep-0484/
 + projects/github_languages_popularity
 + projects/todoist_automation
 + projects/currency_exchange_rates
