@@ -8,7 +8,9 @@ quotes = {
 }
 
 
-def exchange(value, base_currency, quote_currency):
+def exchange(value, base_currency, quote_currency=None):
+    if quote_currency is None:
+        return exchange_to_all(value, base_currency)
     pair = base_currency + '/' + quote_currency
     if pair in quotes:
         return value * quotes[pair]
@@ -18,33 +20,7 @@ def exchange(value, base_currency, quote_currency):
     return None
 
 
-def convert(pair, value):
-    if pair in quotes:
-        return value * quotes[pair]
-    return None
-
-
-def all_quote_currencies():
-    result = set()
-    for pair in quotes.keys():
-        base, quote = pair.split('/')
-        result.add(quote)
-    return result
-
-
-def all_base_currencies():
-    result = set()
-    for pair in quotes.keys():
-        base, quote = pair.split('/')
-        result.add(base)
-    return result
-
-
-def all_currencies():
-    return all_base_currencies() | all_quote_currencies()
-
-
-def exchange_to_many(value, base_currency):
+def exchange_to_all(value, base_currency):
     result = []
     for pair, rate in quotes.items():
         base, quote = pair.split('/')
@@ -60,7 +36,4 @@ def exchange_to_many(value, base_currency):
 if __name__ == '__main__':
     print(exchange(10, 'USD', 'RUR'))
     print(exchange(10, 'RUR', 'USD'))
-    print(exchange_to_many(100000, 'USD'))
-    print(all_quote_currencies())
-    print(all_base_currencies())
-    print(all_currencies())
+    print(exchange_to_all(100000, 'USD'))
