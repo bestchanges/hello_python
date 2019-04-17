@@ -34,6 +34,7 @@
 - sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
 - assert
 - unit testing
+- glossary https://docs.python.org/3/glossary.html
 - coverage
 - Test Driven Development
 - iterators
