@@ -21,12 +21,14 @@ def convert(amount, currency):
     assert (len(currency) == 3), "Incorrect currency format."
     for k in rates.keys():
         if currency in k:
-            precision = 6 if k[4:7] == "BTC" else 2
+            i = 0
             if k.find(currency) == 0:
                 rate = rates[k]
+                i = 4
             elif k.find(currency) > 0:
                 rate = 1 / rates[k]
-            print(f"{rate * amount:.{precision}f} {k[4:7]}")
+            precision = 6 if k[i:i + 3] == "BTC" else 2
+            print(f"{rate * amount:.{precision}f} {k[i:i + 3]}")
 
 
 def update(currency1, currency2, rate):
