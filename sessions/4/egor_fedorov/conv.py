@@ -1,5 +1,6 @@
 from rates import exchange, quotes
 
+
 def main():
     while True:
         user_input = input('Volume and currency: ')
@@ -19,6 +20,7 @@ def main():
                 print(f"{volume:.2f} {currency}")
         except:
             print("Cannot process your request")
+
 
 if __name__ == '__main__':
     main()

@@ -33,6 +33,7 @@
 - variables scope https://www.youtube.com/watch?v=QVdf0LgmICw
 - sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
 - assert
+- defaultdict() https://docs.quantifiedcode.com/python-anti-patterns/correctness/not_using_defaultdict.html
 - unit testing
 - coverage
 - Test Driven Development
