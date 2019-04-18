@@ -2,8 +2,6 @@
 
 # conv.py - содержит main метод и логику взаимодействия с пользователем, 
 
-from rates import Rates
-
 
 def print_usage():
     print("""Usage:
@@ -30,9 +28,10 @@ def main_loop():
 
 # ========  Execution  =============
 
-rates = Rates(" USD/RUR=64.35 BTC/RUR=325960 USD/EUR=0.88 EUR/RUR=72.72")
-
-main_loop()
+if __name__ == "__main__":
+	from rates import Rates
+	rates = Rates(" USD/RUR=64.35 BTC/RUR=325960 USD/EUR=0.88 EUR/RUR=72.72")
+	main_loop()
 
 
 
