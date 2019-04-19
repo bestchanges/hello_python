@@ -2,13 +2,18 @@
 - modules
 - `__main__`
 - files IO
+  - BOM handling encoding 'utf-8-sig'
+- JSON data
 
 ## Material
 - https://pythoner.name/documentation/tutorial/modules
 - modules : https://www.youtube.com/watch?v=CqvZ3vGoGs0&t=367s
 - `__main__` :(https://www.youtube.com/watch?v=sugvnHA7ElY)
 - Files https://www.youtube.com/watch?v=Uh2ebFW8OYM
-- Files 7.2 https://pythoner.name/documentation/tutorial/output
+- Files 7.2.1 and Json 7.2.2 https://pythoner.name/documentation/tutorial/output
+
+## Homework tasks
+- Read out "PEP 8" https://www.python.org/dev/peps/pep-0008/
 
 ## Project
 - exchange rate service
