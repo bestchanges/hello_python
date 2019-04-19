@@ -53,6 +53,7 @@
 - classes, OOP, duck types
 - mutlithreading
 - assert
+- magic methods
 - unit testing
 - coverage
 - docker
@@ -65,11 +66,7 @@
 - QA automation
 - test performance of web-service
 - Django web site
-
-
-# Backlog topics
-- SQL databases
-- NoSQL databases
+- acyncio
 - ML
 
 # Backlog projects
