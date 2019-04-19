@@ -1,6 +1,7 @@
 # Session 5
 - packages: pip, distutils, setuptools
 - venv 
+  - shebang
 - networking: 
   - sockets
   - HTTP clients. requests, urllib, urllib2

@@ -2,6 +2,7 @@
 - modules
 - `__main__`
 - files IO
+  - BOM handling encoding 'utf-8-sig'
 - JSON data
 
 ## Material

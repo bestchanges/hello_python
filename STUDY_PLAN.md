@@ -54,6 +54,7 @@
 - mutlithreading
 - assert
 - magic methods
+- defaultdict() https://docs.quantifiedcode.com/python-anti-patterns/correctness/not_using_defaultdict.html
 - unit testing
 - coverage
 - docker
@@ -66,7 +67,11 @@
 - QA automation
 - test performance of web-service
 - Django web site
-- acyncio
+
+
+# Backlog topics
+- SQL databases
+- NoSQL databases
 - ML
 
 # Backlog projects
