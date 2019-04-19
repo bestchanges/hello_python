@@ -64,6 +64,6 @@ NUMBER_OF_GUESSES = 9
 
 words = tuple(read_file("../dict.txt"))
 
-last_wish = 'y'
-while last_wish == 'y':
-    last_wish = start_game()
+while True:
+    if start_game() != 'y':
+        break
