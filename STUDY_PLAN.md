@@ -68,10 +68,7 @@
 - test performance of web-service
 - Django web site
 
-
-# Backlog topics
-- SQL databases
-- NoSQL databases
+- acyncio
 - ML
 
 # Backlog projects
