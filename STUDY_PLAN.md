@@ -1,6 +1,6 @@
 # Study Plan
 
-## Session 1
+## [Session 1](sessions/1/)
 - intro: projects, zen, code_style
 - install & setup (PyCharm)
 - run, debug, python console
@@ -10,13 +10,13 @@
 - control flow (if, for, while)
 + projects: guess_game
 
-## Session 2
+## [Session 2](sessions/2/)
 - complex types (tuple, array, dict, set)
 - iterables, with statement (need to repeat)
 - exceptions
 + projects/kalimbas
 
-## Session 3
+## [Session 3](sessions/3/)
 - functions
 - lambda-functions 
 - generators 
@@ -24,14 +24,14 @@
 + projects/prime_numbers
 + projects/gallow_game
 
-## Session 4
+##[Session 4](sessions/4/)
 - modules
 - `__main__`
 - files IO
 - project: GUI
 - JSON data
 
-## Session 5
+## [Session 5](sessions/5/)
 - packages: pip, distutils, setuptools
 - venv 
 - networking: 
@@ -50,6 +50,7 @@
 - variables scope https://www.youtube.com/watch?v=QVdf0LgmICw
 - type hints https://www.python.org/dev/peps/pep-0484/
 - sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
+- collections https://docs.python.org/3/library/collections.html
 - classes, OOP, duck types
 - mutlithreading
 - assert
