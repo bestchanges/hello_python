@@ -71,6 +71,8 @@
 - acyncio
 - ML
 
+- run own console with https://docs.python.org/3/library/readline.html
+
 # Backlog projects
 + github_languages_popularity
 + todoist_automation
