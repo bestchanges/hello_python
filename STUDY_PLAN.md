@@ -25,38 +25,46 @@
 + projects/gallow_game
 
 ## Session 4
-- [modules](https://www.youtube.com/watch?v=CqvZ3vGoGs0&t=367s)
-- [__main__](https://www.youtube.com/watch?v=sugvnHA7ElY)
+- modules
+- `__main__`
 - files IO
 - project: GUI
- 
+- JSON data
+
+## Session 5
+- packages: pip, distutils, setuptools
+- venv 
+- networking: 
+  - sockets
+  - HTTP clients. requests, urllib, urllib2
+  - asyncio (not yet)
+
+
+- iterators
+- CLI args
+- logging
+
+- decorators
+- web server: Flask
+
 - variables scope https://www.youtube.com/watch?v=QVdf0LgmICw
+- type hints https://www.python.org/dev/peps/pep-0484/
 - sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
+- classes, OOP, duck types
+- mutlithreading
 - assert
 - defaultdict() https://docs.quantifiedcode.com/python-anti-patterns/correctness/not_using_defaultdict.html
 - unit testing
 - coverage
+- docker
+
+- SQL Databases
+- noSQL databases
+- queues: rabbitmq
+ 
 - Test Driven Development
-- iterators
-- packages, venv, pip
-- networking
-- JSON print/parse
-- CLI args
-+ projects/github_languages_popularity
-+ projects/todoist_automation
-+ projects/currency_exchange_rates
-- decorators
-+ projects/chat_service
-+ projects/gimblet_online_game
-- classes, OOP, duck types
-
-## Session 6
 - QA automation
-
-## Session 7
 - test performance of web-service
-
-## Session 8
 - Django web site
 
 
@@ -66,6 +74,11 @@
 - ML
 
 # Backlog projects
-- object recognition
-- smart home gadgets
-- telegram bot
++ github_languages_popularity
++ todoist_automation
++ currency_exchange_rates
++ chat_service
++ gimblet_online_game
++ object recognition
++ smart home gadgets
++ telegram bot
