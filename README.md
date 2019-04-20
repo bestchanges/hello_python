@@ -11,3 +11,8 @@ collaborative study of python language.
 - Collaboration
 - Studying by doing
 - Let’s have fun!
+
+# Howto start
+- install PyCharm
+- Checkout from version control (take url from Clone or download button on github)
+- refer to [HOWTO.md](HOWTO.md) 
