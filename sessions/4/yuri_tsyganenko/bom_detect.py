@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 
+""" Задача - записать выходной файл в том же формате, что и входной.
+То есть может быть
+* BOM (byte order marker) в разных вариантах, или отсутствовать
+   - надо в точности в выходной файл также записать BOM или без такового
+* могут быть отличия в самом тексте
+
+PS Первая строка, по-факту, не меняется, выглядит как "0 HEAD" но это не критерий
+"""
 
 def detect_bom( in_file):
     """
@@ -24,12 +32,19 @@ def detect_bom( in_file):
     else:
         in_file.seek(0)
         print("not detected any BOM. or other unsupported cases of BOM value")
-
+    return bom
 
 
 if __name__ == "__main__":
     for fname in ['withBOM.ged', 'withoutBOM.ged']:
         print('=={}=='.format(fname))
         with open(fname, 'rb') as f:
-            detect_bom(f)
+            bom = detect_bom(f)
+            with open(fname + "__OUT.ged", "wb") as outfile:
+                if bom:
+                    outfile.write(bom)
+                for line in f:
+                    outfile.write(line)
+
+
 
