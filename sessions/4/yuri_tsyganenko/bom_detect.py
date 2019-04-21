@@ -38,13 +38,35 @@ def detect_bom( in_file):
 if __name__ == "__main__":
     for fname in ['withBOM.ged', 'withoutBOM.ged']:
         print('=={}=='.format(fname))
-        with open(fname, 'rb') as f:
-            bom = detect_bom(f)
+        with open(fname, 'rb') as infile:
+            pass
+            #  ## Old - ugly - WORKING code
+            # bom = detect_bom(infile)
+            # with open(fname + "__OUT.ged", "wb") as outfile:
+            #     if bom:
+            #         outfile.write(bom)
+            #     for line in infile:
+            #         outfile.write(line)
+
+            # =================
+            # binary file in, decode
+            # text file out
+            # Does not work - saves without BOM regardless input bom
+            #
+            # with open(fname + "__OUT.ged", "wt") as outfile:
+            #     for line in infile:
+            #         s = line.decode('utf-8-sig')
+            #         print(s)
+            #         outfile.write(s)
+
+            # =================
+            # binary file in, decode,  binary file out
+            # Does not work: Looks like it writes bom into each line
             with open(fname + "__OUT.ged", "wb") as outfile:
-                if bom:
-                    outfile.write(bom)
-                for line in f:
-                    outfile.write(line)
+                for line in infile:
+                    s = line.decode('utf-8-sig')
+                    print(s.strip())
+                    outfile.write(s.encode('utf-8-sig'))
 
 
 
