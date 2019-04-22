@@ -69,6 +69,7 @@
 - collections https://docs.python.org/3/library/collections.html
 - closures https://www.youtube.com/watch?v=swU3c34d2NQ
 - classes, OOP, duck types
+  - getter/setters https://www.youtube.com/watch?v=jCzT9XFZ5bw 
 - mutlithreading
 - assert
 - magic methods
