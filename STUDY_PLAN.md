@@ -24,33 +24,50 @@
 + projects/prime_numbers
 + projects/gallow_game
 
-##[Session 4](sessions/4/)
+## [Session 4](sessions/4/)
 - modules
 - `__main__`
 - files IO
-- project: GUI
+  - BOM handling encoding 'utf-8-sig'
 - JSON data
+- project:  exchange rate service
 
 ## [Session 5](sessions/5/)
 - packages: pip, distutils, setuptools
-- venv 
+- venv, virtualenv, virtualenvwrapper 
 - networking: 
   - sockets
   - HTTP clients. requests, urllib, urllib2
   - asyncio (not yet)
+- project: GitHub languages popularity
 
-
-- iterators
+## [Session 6](sessions/6/)
+- decorators
+  - project: cache function result with decorator
+- variables scope https://www.youtube.com/watch?v=QVdf0LgmICw 
+- sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
 - CLI args
 - logging
+  - project: command line currency converter (from session 4)  
 
-- decorators
-- web server: Flask
+## [Session 7](sessions/7/) web backend app
+- Flask
+  - routes
+  - endpoints
+  - data storage
+  - dev mode server
+  - production app server
+- project: todolist backend 
+  - apply frontend [vue](https://ru.vuejs.org/v2/examples/todomvc.html) (or any other frontend framework)
 
-- variables scope https://www.youtube.com/watch?v=QVdf0LgmICw
+
+- iterators, generators https://wiki.python.org/moin/Generators
+- context managers 
+
 - type hints https://www.python.org/dev/peps/pep-0484/
-- sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
+
 - collections https://docs.python.org/3/library/collections.html
+- closures https://www.youtube.com/watch?v=swU3c34d2NQ
 - classes, OOP, duck types
 - mutlithreading
 - assert
@@ -63,7 +80,7 @@
 - SQL Databases
 - noSQL databases
 - queues: rabbitmq
- 
+
 - Test Driven Development
 - QA automation
 - test performance of web-service
