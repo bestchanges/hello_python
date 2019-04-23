@@ -1,6 +1,6 @@
 # Session 5
 - packages: pip, distutils, setuptools
-- venv 
+- venv, virtualenv, virtualenvwrapper 
   - shebang
 - networking: 
   - sockets
