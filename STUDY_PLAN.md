@@ -61,7 +61,9 @@
   - apply frontend [vue](https://ru.vuejs.org/v2/examples/todomvc.html) (or any other frontend framework)
 
 
-- iterators, generators https://wiki.python.org/moin/Generators
+- iterators, generators 
+  - https://wiki.python.org/moin/Generators
+  - https://habr.com/ru/post/337314/
 - context managers 
 
 - type hints https://www.python.org/dev/peps/pep-0484/
