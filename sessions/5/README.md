@@ -7,6 +7,10 @@
   - HTTP clients. requests, urllib, urllib2
   - asyncio (Not yet!)
 
+
+## Screencast
+[![Hello Python Session](http://img.youtube.com/vi/u04dOOMBoMw/0.jpg)](http://www.youtube.com/watch?v=u04dOOMBoMw "Hello Python Session")
+
 ## Material
 - Python [packaging](https://packaging.python.org/), AND [Glossary](https://packaging.python.org/glossary/)
   - [Installing](https://packaging.python.org/tutorials/installing-packages/):
