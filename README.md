@@ -1,16 +1,16 @@
 # Hello Python Workshops
 collaborative study of python language.
 
-## Actions:
-- go to sessions and start study
-- take time to [review and discuss other's students projects](https://github.com/bestchanges/hello_python/pulls?q=is%3Apr+is%3Aclosed)
-- view our [study plan](https://github.com/bestchanges/hello_python/blob/master/STUDY_PLAN.md)
-
 # Our Principles
 - Workshop style
 - Collaboration
 - Studying by doing
 - Let’s have fun!
+
+## Actions:
+- go to [sessions](sessions/) and start study
+- take time to [review and discuss other's students projects](https://github.com/bestchanges/hello_python/commits/master)
+- view our [study plan](https://github.com/bestchanges/hello_python/blob/master/STUDY_PLAN.md)
 
 # Howto start
 - install PyCharm

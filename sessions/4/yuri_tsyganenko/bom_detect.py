@@ -34,15 +34,18 @@ def detect_bom( in_file):
         print("not detected any BOM. or other unsupported cases of BOM value")
     return bom
 
+# FYI https://stackoverflow.com/questions/13590749/reading-unicode-file-data-with-bom-chars-in-python/13591421
+
+import os
 
 if __name__ == "__main__":
     for fname in ['withBOM.ged', 'withoutBOM.ged']:
         print('=={}=='.format(fname))
         with open(fname, 'rb') as infile:
-            pass
+            fname_out = fname + "__OUT.ged"
             #  ## Old - ugly - WORKING code
             # bom = detect_bom(infile)
-            # with open(fname + "__OUT.ged", "wb") as outfile:
+            # with open(fname_out, "wb") as outfile:
             #     if bom:
             #         outfile.write(bom)
             #     for line in infile:
@@ -53,20 +56,25 @@ if __name__ == "__main__":
             # text file out
             # Does not work - saves without BOM regardless input bom
             #
-            # with open(fname + "__OUT.ged", "wt") as outfile:
+            # with open(fname_out, "wt") as outfile:
             #     for line in infile:
             #         s = line.decode('utf-8-sig')
             #         print(s)
             #         outfile.write(s)
 
             # =================
-            # binary file in, decode,  binary file out
+            # binary file in, decode,  binary file out   (one may look in shell via $ xxd <filename>)
             # Does not work: Looks like it writes bom into each line
-            with open(fname + "__OUT.ged", "wb") as outfile:
+            with open(fname_out, "wb") as outfile:
                 for line in infile:
                     s = line.decode('utf-8-sig')
                     print(s.strip())
                     outfile.write(s.encode('utf-8-sig'))
 
+            # Блок провеки: размер нового файла должен в точности совпасть с размером исходного
+            size_in = os.stat(fname).st_size
+            size_out = os.stat(fname_out).st_size
+            print(fname + " " + str(size_in) + " -> " + str(size_out))
+            assert(size_in == size_out)
 
 
