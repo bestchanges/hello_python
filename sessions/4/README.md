@@ -5,6 +5,9 @@
   - BOM handling encoding 'utf-8-sig'
 - JSON data
 
+## Screencast
+[![Hello Python Session](http://img.youtube.com/vi/cesOjJRKiDw/0.jpg)](http://www.youtube.com/watch?v=cesOjJRKiDw "Hello Python Session")
+
 ## Material
 - Official https://docs.python.org/3/tutorial/modules.html#packages
 - Rus https://pythoner.name/documentation/tutorial/modules
