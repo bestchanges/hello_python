@@ -1,19 +1,20 @@
-# Session 6
+# Session 6 RESTful backend
+- Flask
+  - routes
+  - endpoints
+  - dev mode server
 - decorators
-- variables scopes https://www.youtube.com/watch?v=QVdf0LgmICw
-  - looping variable in for is in external scope
-- sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
-- CLI args
+- read CLI args
 - logging
 
 
 ## Material
-- Decorators: as function, as class: https://www.youtube.com/watch?v=FsAPt_9Bf3U
+- Flask: http://flask.pocoo.org/
+- Decorators: https://www.youtube.com/watch?v=FsAPt_9Bf3U
+  - as class: https://youtu.be/FsAPt_9Bf3U?t=811
 - decorators examples: logging, timer, wraps from functools: https://youtu.be/FsAPt_9Bf3U?t=1074
-- decorators with arguments https://www.youtube.com/watch?v=KlBPCzcQNU8
 
 ## Project
 - project: cache function result with decorator
-
-
-- project: command line currency converter (from session 4)  
+- project: create todolist backend 
+  - apply frontend [vue](https://ru.vuejs.org/v2/examples/todomvc.html) (or any other frontend framework)

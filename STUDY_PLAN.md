@@ -42,30 +42,33 @@
 - project: GitHub languages popularity
 
 ## [Session 6](sessions/6/)
-- decorators
-  - project: cache function result with decorator
-- variables scope https://www.youtube.com/watch?v=QVdf0LgmICw 
-- sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
-- CLI args
-- logging
-  - project: command line currency converter (from session 4)  
-
-## [Session 7](sessions/7/) web backend app
 - Flask
   - routes
   - endpoints
-  - data storage
   - dev mode server
-  - production app server
+- read CLI args
+- logging
 - project: todolist backend 
   - apply frontend [vue](https://ru.vuejs.org/v2/examples/todomvc.html) (or any other frontend framework)
+- decorators
+  - project: cache function result with decorator
 
+## [Session 7](sessions/7/) web backend app
+
+- variables scope https://www.youtube.com/watch?v=QVdf0LgmICw 
+- sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
+- project: command line currency converter (from session 4)  
 
 - iterators, generators 
   - https://wiki.python.org/moin/Generators
   - https://habr.com/ru/post/337314/
 - context managers 
+- project: command line currency converter (from session 4)  
 
+- Decorators arguments: https://www.youtube.com/watch?v=KlBPCzcQNU8
+- flask: data storage
+- flask: templates
+- flask: production app server
 - type hints https://www.python.org/dev/peps/pep-0484/
 
 - collections https://docs.python.org/3/library/collections.html
@@ -79,6 +82,11 @@
 - unit testing
 - coverage
 - docker
+- jupiter
+- threading, multiprocessing
+- GIL 
+  - https://opensource.com/article/17/4/grok-gil
+
 
 - SQL Databases
 - noSQL databases
