@@ -98,7 +98,7 @@
 - Django web site
 
 - acyncio
-- ML
+- ML start project https://medium.com/technology-invention-and-more/how-to-build-a-simple-neural-network-in-9-lines-of-python-code-cc8f23647ca1
 
 - run own console with https://docs.python.org/3/library/readline.html
 

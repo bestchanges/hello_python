@@ -1,6 +1,9 @@
-from flask import Flask, jsonify, request, abort
+from functools import reduce
+
+from flask import Flask, jsonify, request, abort, Response
 from logging import log, debug
 import logging
+import uuid
 
 logging.basicConfig(level=logging.DEBUG)
 app = Flask('todolist')
@@ -8,51 +11,26 @@ app = Flask('todolist')
 todolists = {
     'sample': {
         'name': 'sample',
-        'items': {
-            1: {
-                'text': 'First task',
-                'checked': False,
+        'items': [
+            {
+                'id': '1',
+                'title': 'First task',
+                'completed': False,
             },
-            2: {
-                'text': 'Second task',
-                'checked': True,
+            {
+                'id': '2',
+                'title': 'Second task',
+                'completed': True,
             }
-        }
+        ]
     }
 }
 
-EMPTY_TODOLIST = { 'name': '', 'items': []}
-EMPTY_TODOITEM = { 'text': '', 'checked': False}
+EMPTY_TODOITEM = { 'title': '', 'completed': False}
 
 @app.route("/")
 def hello():
     return jsonify({'lists': list(todolists.keys())})
-
-
-@app.route("/api/todolist", methods=('GET', 'POST'))
-def todolists_endpoint():
-    if request.method == 'POST':
-        todolist = request.get_json()
-        id = todolist['name']
-        todolists[id] = {**EMPTY_TODOLIST, **todolist}
-        return id
-    return jsonify(list(todolists.keys()))
-
-
-@app.route("/api/todolist/<todolist_id>", methods=('GET', 'POST', 'DELETE'))
-def todolist_endpoint(todolist_id):
-    if not todolist_id in todolists:
-        abort(404)
-    todolist = todolists[todolist_id]
-    if request.method == 'DELETE':
-        del todolists[todolist_id]
-        return "OK"
-    elif request.method == 'POST':
-        item = {**EMPTY_TODOLIST, **request.get_json() }
-        todolist[todolist_id] = item
-        return str(todolist_id)
-    else:
-        return jsonify(todolist)
 
 
 @app.route("/api/todoitem/<todolist_id>", methods=('GET', 'POST'))
@@ -61,27 +39,42 @@ def todoitems_endpoint(todolist_id):
         abort(404)
     items = todolists[todolist_id]['items']
     if request.method == 'POST':
-        item = {**EMPTY_TODOITEM, **request.get_json()}
-        item_id = max(items.keys()) + 1
-        items[item_id] = item
-        return jsonify(item_id)
+        item = request.get_json()
+        item['id'] = next_id(items)
+        items.append(item)
+        return jsonify(item)
     return jsonify(items)
 
 
-@app.route("/api/todoitem/<todolist_id>/<int:item_id>", methods=('GET', 'POST', 'DELETE'))
+@app.route("/api/todoitem/<todolist_id>/<item_id>", methods=('GET', 'PUT', 'DELETE'))
 def todoitem_endpoint(todolist_id, item_id):
     if not todolist_id in todolists:
         abort(404)
     items = todolists[todolist_id]['items']
     if request.method == 'DELETE':
-        if not item_id in items:
+        item_index = item_index_by_id(items, item_id)
+        if item_index is not None:
+            del items[item_index]
+        return Response(status=204)
+    elif request.method == 'PUT':
+        item = request.get_json()
+        item_index = item_index_by_id(items, item_id)
+        if item_index is None:
             abort(404)
-        del items[item_id]
-        return "OK"
-    elif request.method == 'POST':
-        item = {**EMPTY_TODOITEM, **request.get_json()}
-        items[item_id] = item
-    return jsonify(items.get(item_id))
+        items[item_index] = item
+        return jsonify(item)
+    elif request.method == 'GET':
+        return jsonify(items)
+
+
+def next_id(items):
+    return str(uuid.uuid4())
+    # return reduce(lambda a, x: x['id'] if x['id'] > a else a, items, 0) + 1
+
+
+def item_index_by_id(items, item_id):
+    found = [i for i, x in enumerate(items) if x['id'] == item_id]
+    return found[0] if found else None
 
 
 if __name__ == '__main__':
