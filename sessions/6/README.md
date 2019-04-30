@@ -4,9 +4,9 @@
   - endpoints
   - dev mode server
 - decorators
-- read CLI args
-- logging
 
+## Screencast
+[![Hello Python Session](http://img.youtube.com/vi/JNmzpqTAF_o/0.jpg)](http://www.youtube.com/watch?v=JNmzpqTAF_o "Hello Python Session")
 
 ## Material
 - Flask: http://flask.pocoo.org/
