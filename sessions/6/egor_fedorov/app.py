@@ -1,88 +1,52 @@
-from flask import Flask, jsonify, request, abort
-from logging import log, debug
-import logging
+import uuid
 
-logging.basicConfig(level=logging.DEBUG)
-app = Flask('todolist')
+from flask import Flask, jsonify, request, redirect
 
-todolists = {
-    'sample': {
-        'name': 'sample',
-        'items': {
-            1: {
-                'text': 'First task',
-                'checked': False,
-            },
-            2: {
-                'text': 'Second task',
-                'checked': True,
-            }
-        }
+app = Flask(__name__)
+
+
+def gen_id():
+    return str(uuid.uuid4())
+
+
+items = [
+    {
+        'title': 'First',
+        'id': gen_id(),
+        'completed': False,
+    },
+    {
+        'title': 'Second',
+        'id': gen_id(),
+        'completed': True,
     }
-}
-
-EMPTY_TODOLIST = { 'name': '', 'items': []}
-EMPTY_TODOITEM = { 'text': '', 'checked': False}
-
-@app.route("/")
-def hello():
-    return jsonify({'lists': list(todolists.keys())})
+]
 
 
-@app.route("/api/todolist", methods=('GET', 'POST'))
-def todolists_endpoint():
-    if request.method == 'POST':
-        todolist = request.get_json()
-        id = todolist['name']
-        todolists[id] = {**EMPTY_TODOLIST, **todolist}
-        return id
-    return jsonify(list(todolists.keys()))
-
-
-@app.route("/api/todolist/<todolist_id>", methods=('GET', 'POST', 'DELETE'))
-def todolist_endpoint(todolist_id):
-    if not todolist_id in todolists:
-        abort(404)
-    todolist = todolists[todolist_id]
-    if request.method == 'DELETE':
-        del todolists[todolist_id]
-        return "OK"
-    elif request.method == 'POST':
-        item = {**EMPTY_TODOLIST, **request.get_json() }
-        todolist[todolist_id] = item
-        return str(todolist_id)
-    else:
-        return jsonify(todolist)
-
-
-@app.route("/api/todoitem/<todolist_id>", methods=('GET', 'POST'))
-def todoitems_endpoint(todolist_id):
-    if not todolist_id in todolists:
-        abort(404)
-    items = todolists[todolist_id]['items']
-    if request.method == 'POST':
-        item = {**EMPTY_TODOITEM, **request.get_json()}
-        item_id = max(items.keys()) + 1
-        items[item_id] = item
-        return jsonify(item_id)
+@app.route("/items", methods=('GET',))
+def get_items():
     return jsonify(items)
 
 
-@app.route("/api/todoitem/<todolist_id>/<int:item_id>", methods=('GET', 'POST', 'DELETE'))
-def todoitem_endpoint(todolist_id, item_id):
-    if not todolist_id in todolists:
-        abort(404)
-    items = todolists[todolist_id]['items']
-    if request.method == 'DELETE':
-        if not item_id in items:
-            abort(404)
-        del items[item_id]
-        return "OK"
-    elif request.method == 'POST':
-        item = {**EMPTY_TODOITEM, **request.get_json()}
-        items[item_id] = item
-    return jsonify(items.get(item_id))
+@app.route("/items", methods=('POST',))
+def post_items():
+    item = request.get_json()
+    item['id'] = gen_id()
+    items.append(item)
+    return jsonify(item)
+
+
+@app.route("/items/<item_id>", methods=('PUT',))
+def put_items(item_id):
+    item = request.get_json()
+    # TODO: search and update
+    return jsonify(item)
+
+
+@app.route("/")
+def root():
+    return redirect("/static/index.html")
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5001)
