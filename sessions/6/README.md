@@ -16,7 +16,8 @@
 - Validate JSON: https://pypi.org/project/jsonschema/
 
 ## Project
-- project: cache function result with decorator
-- project: create todolist backend 
-  - apply frontend [vue](https://ru.vuejs.org/v2/examples/todomvc.html) (or any other frontend framework)
-  - add validation of user data
+- cache expensive function result with decorator
+- create todolist backend 
+  - apply frontend [backbone](http://todomvc.com/examples/backbone/) (or any other frontend framework)
+  - advanced: add validation of user data
+  - advanced: add persistent storage (file, sql, etc)
