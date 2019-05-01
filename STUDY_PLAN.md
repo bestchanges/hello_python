@@ -65,6 +65,9 @@
 - context managers 
 - project: command line currency converter (from session 4)  
 
+- read CLI args
+- logging
+
 - Decorators arguments: https://www.youtube.com/watch?v=KlBPCzcQNU8
 - flask: data storage
 - flask: templates
