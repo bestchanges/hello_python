@@ -1,3 +1,9 @@
+# How to start
+- Install Python >= 3.6
+- Install PyCharm (community is enough) 
+- Checkout this repository to git (take url from Clone or download button)
+- request push permissions (via google doc)
+
 # Push your code
 - directly to master branch to directory `sessions/<session>/<firstname_lastname>/`
 - use input files (if any) from session dir `open('../input.txt', 'r')`
