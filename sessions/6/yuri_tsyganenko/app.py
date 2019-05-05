@@ -50,3 +50,19 @@ def post_items():
     item['id'] = gen_id()
     items.append(item)
     return jsonify(items)
+
+
+def find_item(id):
+    for item in items:
+        if item["id"] == id:
+            return item
+    raise ValueError("No item found with id: " + id)
+
+
+@app.route("/items/<item_id>", methods=('PUT',))        #  WHY POST is shown in console ???
+def update_item(item_id):
+    print("PUT_method  ***************** " + item_id)
+    items.remove(find_item(item_id))
+    new_values_item = request.get_json()
+    items.append(new_values_item)
+    return jsonify(items)
