@@ -2,11 +2,26 @@
 Counting happy tickets with tracking time it takes to count them
 """
 
-
+from functools import wraps
 import time
 
 
+
+def my_logger(func):
+    import logging
+    logging.basicConfig(filename='test_timing.log', level=logging.INFO)
+
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        logging.info('Ran {} with args: {}, and kwargs: {}'.format(func.__name__, args, kwargs))
+        #print('Ran {} with args: {}, and kwargs: {}'.format(func.__name__, args, kwargs))
+        return func(*args, **kwargs)
+
+    return wrapper
+
+
 def timer(func):
+    @wraps(func)
     def wrapper_for_timering(*args,  **kwargs):
         start_time = time.time()
         value = func(*args, **kwargs)
@@ -15,6 +30,12 @@ def timer(func):
     return wrapper_for_timering
 
 
+# uncomment the @timer decorator below to get runtime error: line 53, in count_good_numbers
+#     for i in goodNumbers():
+# TypeError: 'NoneType' object is not iterable
+#
+#@timer
+@my_logger
 def goodNumbers():
     sums = {}
     for s in range(0, 28):
