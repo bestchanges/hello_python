@@ -1,10 +1,18 @@
 from flask import Flask, jsonify, request
+from jsonschema import validate
 import uuid
 
 app = Flask(__name__)
 
-
-
+schema = {
+    "type": "object",
+    "properties": {
+        "title": {"type": "string"},
+        "id": {"type": "string"},
+        "completed": {"type": "boolean"},
+    },
+    "required": ["title", "id", "completed"]
+}
 
 def gen_id():
     return str(uuid.uuid4())
@@ -48,6 +56,7 @@ def post_items():
     print("POST_method /ITEMS *****************")
     item = request.get_json()
     item['id'] = gen_id()
+    validate(item, schema)
     items.append(item)
     return jsonify(items)
 
@@ -64,5 +73,7 @@ def update_item(item_id):
     print("PUT_method  ***************** " + item_id)
     items.remove(find_item(item_id))
     new_values_item = request.get_json()
+    new_values_item["id"] = item_id
+    validate(new_values_item, schema)
     items.append(new_values_item)
     return jsonify(items)
