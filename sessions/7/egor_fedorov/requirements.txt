@@ -1,0 +1,5 @@
+flask-socketio
+flask
+pytest
+websocket-client
+eventlet
