@@ -22,11 +22,12 @@ def my_logger(func):
 
 def timer(func):
     @wraps(func)
-    def wrapper_for_timering(*args,  **kwargs):
+    def wrapper_for_timering(*args, **kwargs):
         start_time = time.time()
         value = func(*args, **kwargs)
         end_time = time.time()
         print("{} took {}".format(func.__name__, end_time - start_time))
+        return value
     return wrapper_for_timering
 
 
@@ -34,12 +35,11 @@ def timer(func):
 #     for i in goodNumbers():
 # TypeError: 'NoneType' object is not iterable
 #
-#@timer
-@my_logger
+#
+#@my_logger
+@timer
 def goodNumbers():
-    sums = {}
-    for s in range(0, 28):
-        sums[s] = []
+    sums = {s: [] for s in range(0, 28)}  # Initially empty list for each sum
 
     for i1 in range(10):
         for i2 in range(10):
@@ -52,7 +52,7 @@ def goodNumbers():
                 yield "{}{}{}{}{}{}".format(left[0], left[1], left[2], right[0], right[1], right[2])
 
 
-@timer
+#@timer
 def count_good_numbers():
     cnt = 0
     for i in goodNumbers():
