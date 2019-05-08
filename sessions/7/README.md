@@ -15,6 +15,7 @@
 - [unittest](https://docs.python.org/3/library/unittest.html)
   - will cover later
 - pytest vs unittest: [habr](https://habr.com/ru/post/269759/)
+- [WebSockets](https://ru.wikipedia.org/wiki/WebSocket)
 - socketio
   - https://socket.io/
   - https://python-socketio.readthedocs.io/en/latest/intro.html#
