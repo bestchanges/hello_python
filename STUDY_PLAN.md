@@ -42,18 +42,24 @@
 - project: GitHub languages popularity
 
 ## [Session 6](sessions/6/)
+# Session 6 RESTful backend
 - Flask
   - routes
   - endpoints
   - dev mode server
-- read CLI args
-- logging
 - project: todolist backend 
-  - apply frontend [vue](https://ru.vuejs.org/v2/examples/todomvc.html) (or any other frontend framework)
 - decorators
   - project: cache function result with decorator
 
-## [Session 7](sessions/7/) web backend app
+## [Session 7](sessions/7/) Test Driven Development
+- Test Driven Development
+- PyTest
+- WebSockets
+
+Project
+- write WebSockets based chat using TDD
+
+# Backlog
 
 - variables scope https://www.youtube.com/watch?v=QVdf0LgmICw 
 - sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
@@ -85,9 +91,10 @@
 - magic methods
 - defaultdict() https://docs.quantifiedcode.com/python-anti-patterns/correctness/not_using_defaultdict.html
 - unit testing
+- mocking: functions, files, etc.
 - coverage
 - docker
-- jupiter
+- jupyter notebooks
 - threading, multiprocessing
 - GIL 
   - https://opensource.com/article/17/4/grok-gil
@@ -97,7 +104,6 @@
 - noSQL databases
 - queues: rabbitmq
 
-- Test Driven Development
 - QA automation
 - test performance of web-service
 - Django web site
