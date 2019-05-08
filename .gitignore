@@ -1,3 +1,5 @@
 venv
 .idea
 /requirements.txt
+.pytest_cache
+__pycache__

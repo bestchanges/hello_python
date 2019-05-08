@@ -1,6 +1,7 @@
 import time
 import math
 
+
 def is_prime_v1(num):
     if num <= 1:
         return False
@@ -42,9 +43,8 @@ def generate_100000_primes_v1():
     primes = set()
     start = time.time()
     for next_prime in generate_next_prime_v1(0):
-        if next_prime < 100000:
-            primes.add(next_prime)
-        else:
+        primes.add(next_prime)
+        if next_prime >= 10000:
             break
     end = time.time()
     print(f'Primes: {primes}')
