@@ -59,5 +59,5 @@ def count_good_numbers():
         cnt += 1
     return cnt
 
-count_good_numbers()
+print(count_good_numbers())
 
