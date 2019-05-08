@@ -82,15 +82,19 @@ Project
 - doc generation
 
 ## AsyncIO
-- closures https://www.youtube.com/watch?v=swU3c34d2NQ
+- coroutines https://docs.python.org/3/reference/compound_stmts.html#coroutines
 - [Debug asyncio in PyCharm](https://youtu.be/9x9xIR9tFlc)
 
 ## Object Oriented Programming
-- classes, OOP, duck typing
-  - getter/setters https://www.youtube.com/watch?v=jCzT9XFZ5bw 
+- OOP, classes, 
+  - inheritance
+  - class methods (not functions) 
+  - getter/setters https://www.youtube.com/watch?v=jCzT9XFZ5bw
+- duck typing
 
 ## Parallel execution 
-- threading, multiprocessing
+- threading 
+- multiprocessing
 - GIL 
   - https://opensource.com/article/17/4/grok-gil
 
@@ -98,12 +102,13 @@ Project
 - variables scope https://www.youtube.com/watch?v=QVdf0LgmICw 
 - Decorators with arguments: https://www.youtube.com/watch?v=KlBPCzcQNU8
 - free variables
+  - closures https://www.youtube.com/watch?v=swU3c34d2NQ
 - sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
 - iterators, generators 
   - also class generators
   - https://wiki.python.org/moin/Generators
   - https://habr.com/ru/post/337314/
-- context managers (with)
+- context managers (with statement) https://docs.python.org/3/reference/compound_stmts.html#the-with-statement
 
 
 ## Python modules overview 
@@ -123,20 +128,21 @@ Project
 
 # Backlog
 
+- data model https://docs.python.org/3/reference/datamodel.html
+  - magic methods https://docs.python.org/3/reference/datamodel.html#special-method-names
+- execution model https://docs.python.org/3/reference/executionmodel.html
 - publish package with setuptools
 - type hints https://www.python.org/dev/peps/pep-0484/
-- magic methods
-- docker
+- docker+python
+- docker-compose
 - jupyter notebooks
 - queues: rabbitmq
 - QA automation
 - test performance of web-service
 - Django web site
 - desktop UI (with Tkinter?)
-- Django
-- acyncio
+- aiohttp web
 - ML
-
 
 # Backlog projects
 + github_languages_popularity
