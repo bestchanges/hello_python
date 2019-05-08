@@ -65,6 +65,8 @@
 - context managers 
 - project: command line currency converter (from session 4)  
 
+- [Debug asyncio in PyCharm](https://youtu.be/9x9xIR9tFlc)
+- itertools
 - read CLI args
 - logging
 
