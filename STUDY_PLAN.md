@@ -100,9 +100,10 @@ Project
 - free variables
 - sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
 - iterators, generators 
+  - also class generators
   - https://wiki.python.org/moin/Generators
   - https://habr.com/ru/post/337314/
-- context managers
+- context managers (with)
 
 
 ## Python modules overview 
@@ -131,6 +132,8 @@ Project
 - QA automation
 - test performance of web-service
 - Django web site
+- desktop UI (with Tkinter?)
+- Django
 - acyncio
 - ML
 
