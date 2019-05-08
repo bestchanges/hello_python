@@ -59,59 +59,81 @@
 Project
 - write WebSockets based chat using TDD
 
-# Backlog
+# Unscheduled sessions
 
-- variables scope https://www.youtube.com/watch?v=QVdf0LgmICw 
-- sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
-- project: command line currency converter (from session 4)  
-
-- iterators, generators 
-  - https://wiki.python.org/moin/Generators
-  - https://habr.com/ru/post/337314/
-- context managers 
-- project: command line currency converter (from session 4)  
-
-- [Debug asyncio in PyCharm](https://youtu.be/9x9xIR9tFlc)
-- itertools
+## Good console app
+- 123
+- run own console with https://docs.python.org/3/library/readline.html
 - read CLI args
 - logging
 
-- Decorators arguments: https://www.youtube.com/watch?v=KlBPCzcQNU8
-- flask: data storage
-- flask: templates
-- flask: production app server
-- type hints https://www.python.org/dev/peps/pep-0484/
-
-- collections https://docs.python.org/3/library/collections.html
-- closures https://www.youtube.com/watch?v=swU3c34d2NQ
-- classes, OOP, duck types
-  - getter/setters https://www.youtube.com/watch?v=jCzT9XFZ5bw 
-- mutlithreading
+- project: command line currency converter (from session 4)  
+  - support of command line options
+  - command line usage with exit after completion 
+  - autocomplete command in console
+  - exit Ctrl+D
+  
+## Unittests
+- unittest
 - assert
-- magic methods
-- defaultdict() https://docs.quantifiedcode.com/python-anti-patterns/correctness/not_using_defaultdict.html
-- unit testing
 - mocking: functions, files, etc.
 - coverage
-- docker
-- jupyter notebooks
+- docstrings
+- doc generation
+
+## AsyncIO
+- closures https://www.youtube.com/watch?v=swU3c34d2NQ
+- [Debug asyncio in PyCharm](https://youtu.be/9x9xIR9tFlc)
+
+## Object Oriented Programming
+- classes, OOP, duck typing
+  - getter/setters https://www.youtube.com/watch?v=jCzT9XFZ5bw 
+
+## Parallel execution 
 - threading, multiprocessing
 - GIL 
   - https://opensource.com/article/17/4/grok-gil
 
+## Python Basics 
+- variables scope https://www.youtube.com/watch?v=QVdf0LgmICw 
+- Decorators with arguments: https://www.youtube.com/watch?v=KlBPCzcQNU8
+- free variables
+- sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
+- iterators, generators 
+  - https://wiki.python.org/moin/Generators
+  - https://habr.com/ru/post/337314/
+- context managers
 
-- SQL Databases
-- noSQL databases
+
+## Python modules overview 
+- itertools https://docs.python.org/3.7/library/itertools.html
+- collections https://docs.python.org/3/library/collections.html
+- defaultdict() https://docs.quantifiedcode.com/python-anti-patterns/correctness/not_using_defaultdict.html
+- datetime
+
+## Flask continue
+- flask: data storage
+  - SQL Databases
+  - noSQL databases
+- flask: user management, auth, login, password reset
+- flask: templates
+- flask: production app server
+
+
+# Backlog
+
+- publish package with setuptools
+- type hints https://www.python.org/dev/peps/pep-0484/
+- magic methods
+- docker
+- jupyter notebooks
 - queues: rabbitmq
-
 - QA automation
 - test performance of web-service
 - Django web site
-
 - acyncio
 - ML
 
-- run own console with https://docs.python.org/3/library/readline.html
 
 # Backlog projects
 + github_languages_popularity
