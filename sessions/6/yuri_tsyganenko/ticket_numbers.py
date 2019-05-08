@@ -46,6 +46,7 @@ def goodNumbers():
             for i3 in range(10):
                 sums[i1 + i2 + i3].append((i1, i2, i3))
 
+    time.sleep(4)  # DEBUG - Identify why decorator output is before this delay?
     for s in range(0, 28):
         for left in sums[s]:
             for right in sums[s]:
