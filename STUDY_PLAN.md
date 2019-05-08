@@ -62,14 +62,15 @@ Project
 # Unscheduled sessions
 
 ## Good console app
-- 123
 - run own console with https://docs.python.org/3/library/readline.html
 - read CLI args
 - logging
 
 - project: command line currency converter (from session 4)  
+  - available commands generated on fly from object
   - support of command line options
-  - command line usage with exit after completion 
+  - command line usage with exit after completion
+  - help function displays docstring 
   - autocomplete command in console
   - exit Ctrl+D
   
