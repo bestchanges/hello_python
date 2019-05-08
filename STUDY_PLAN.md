@@ -145,11 +145,10 @@ Project
 - ML
 
 # Backlog projects
-+ github_languages_popularity
++ trading bot
 + todoist_automation
 + currency_exchange_rates
-+ chat_service
 + gimblet_online_game
 + object recognition
 + smart home gadgets
-+ telegram bot
++ chat bot (telegram, alice, skype)
