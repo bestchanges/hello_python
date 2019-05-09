@@ -42,75 +42,114 @@
 - project: GitHub languages popularity
 
 ## [Session 6](sessions/6/)
+# Session 6 RESTful backend
 - Flask
   - routes
   - endpoints
   - dev mode server
-- read CLI args
-- logging
 - project: todolist backend 
-  - apply frontend [vue](https://ru.vuejs.org/v2/examples/todomvc.html) (or any other frontend framework)
 - decorators
   - project: cache function result with decorator
 
-## [Session 7](sessions/7/) web backend app
+## [Session 7](sessions/7/) Test Driven Development
+- Test Driven Development
+- PyTest
+- WebSockets
 
-- variables scope https://www.youtube.com/watch?v=QVdf0LgmICw 
-- sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
-- project: command line currency converter (from session 4)  
+Project
+- write WebSockets based chat using TDD
 
-- iterators, generators 
-  - https://wiki.python.org/moin/Generators
-  - https://habr.com/ru/post/337314/
-- context managers 
-- project: command line currency converter (from session 4)  
+# Unscheduled sessions
 
+## Good console app
+- run own console with https://docs.python.org/3/library/readline.html
 - read CLI args
 - logging
 
-- Decorators arguments: https://www.youtube.com/watch?v=KlBPCzcQNU8
-- flask: data storage
-- flask: templates
-- flask: production app server
-- type hints https://www.python.org/dev/peps/pep-0484/
-
-- collections https://docs.python.org/3/library/collections.html
-- closures https://www.youtube.com/watch?v=swU3c34d2NQ
-- classes, OOP, duck types
-  - getter/setters https://www.youtube.com/watch?v=jCzT9XFZ5bw 
-- mutlithreading
+- project: command line currency converter (from session 4)  
+  - available commands generated on fly from object
+  - support of command line options
+  - command line usage with exit after completion
+  - help function displays docstring 
+  - autocomplete command in console
+  - exit Ctrl+D
+  
+## Unittests
+- unittest
 - assert
-- magic methods
-- defaultdict() https://docs.quantifiedcode.com/python-anti-patterns/correctness/not_using_defaultdict.html
-- unit testing
+- mocking: functions, files, etc.
 - coverage
-- docker
-- jupiter
-- threading, multiprocessing
+- docstrings
+- doc generation
+
+## AsyncIO
+- coroutines https://docs.python.org/3/reference/compound_stmts.html#coroutines
+- [Debug asyncio in PyCharm](https://youtu.be/9x9xIR9tFlc)
+
+## Object Oriented Programming
+- OOP, classes, 
+  - inheritance
+  - class methods (not functions) 
+  - getter/setters https://www.youtube.com/watch?v=jCzT9XFZ5bw
+- duck typing
+
+## Parallel execution 
+- threading 
+- multiprocessing
 - GIL 
   - https://opensource.com/article/17/4/grok-gil
 
+## Python Basics 
+- variables scope https://www.youtube.com/watch?v=QVdf0LgmICw 
+- Decorators with arguments: https://www.youtube.com/watch?v=KlBPCzcQNU8
+- free variables
+  - closures https://www.youtube.com/watch?v=swU3c34d2NQ
+- sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
+- iterators, generators 
+  - also class generators
+  - https://wiki.python.org/moin/Generators
+  - https://habr.com/ru/post/337314/
+- context managers (with statement) https://docs.python.org/3/reference/compound_stmts.html#the-with-statement
 
-- SQL Databases
-- noSQL databases
+
+## Python modules overview 
+- itertools https://docs.python.org/3.7/library/itertools.html
+- collections https://docs.python.org/3/library/collections.html
+- defaultdict() https://docs.quantifiedcode.com/python-anti-patterns/correctness/not_using_defaultdict.html
+- datetime
+
+## Flask continue
+- flask: data storage
+  - SQL Databases
+  - noSQL databases
+- flask: user management, auth, login, password reset
+- flask: templates
+- flask: production app server
+
+
+# Backlog
+
+- data model https://docs.python.org/3/reference/datamodel.html
+  - magic methods https://docs.python.org/3/reference/datamodel.html#special-method-names
+- execution model https://docs.python.org/3/reference/executionmodel.html
+- publish package with setuptools
+- type hints https://www.python.org/dev/peps/pep-0484/
+- docker+python
+- docker-compose
+- jupyter notebooks
 - queues: rabbitmq
-
-- Test Driven Development
 - QA automation
 - test performance of web-service
 - Django web site
-
-- acyncio
+- desktop UI (with Tkinter?)
+- aiohttp web
 - ML
 
-- run own console with https://docs.python.org/3/library/readline.html
-
 # Backlog projects
-+ github_languages_popularity
++ trading bot
 + todoist_automation
 + currency_exchange_rates
-+ chat_service
 + gimblet_online_game
 + object recognition
 + smart home gadgets
-+ telegram bot
++ chat bot (telegram, alice, skype)
