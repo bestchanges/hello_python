@@ -1,51 +1,36 @@
 from time import time
-import math
 
 
-def yield_suitable_prime(primes_list, square_root):
-    for prime in primes_list:
-        if prime <= square_root:
-            yield prime
-
-
-
-def dumb_prime_numbers(limit):
-    """absolutely straightforward.. goes too long for 100k primes"""
-    primes = [2, 3]
-    n = 3
-    count = 1
-    while count <= limit:
-        n += 2
-        prime = True
-        for p in primes:
-            if not n % p:
-                prime = False
-        if prime:
-            count += 1
-            primes.append(n)
-    return primes
-
-
-def slow_prime_numbers(limit):
+def prime_numbers(limit):
     """straightforward, but taking into account that divisor cannot be greater than square root of n"""
     primes = [2, 3, 5]
     for p in primes:
         yield p
     n = 5
     count = 3
+    last_idx = -1
+    sqrd_prime = 0
     while count <= limit:
         n += 2
-        print(*yield_suitable_prime(primes[1:], math.sqrt(n)))
-        for p in yield_suitable_prime(primes[1:], math.sqrt(n)):
+        if n > sqrd_prime:
+            last_idx += 1
+            sqrd_prime = primes[last_idx] ** 2
+        is_prime = True
+        for i in range(1, last_idx + 1):
+            p = primes[i]
             if n % p == 0:
+                is_prime = False
                 break
-        else:
+        if is_prime:
             count += 1
             primes.append(n)
             yield n
 
 
 start = time()
-print(*slow_prime_numbers(150))
+g = prime_numbers(300000)
+for i in range(300000):
+    val = next(g)
+print(val)
 end = time()
 print("time consumed: ", round(end - start, 3))
