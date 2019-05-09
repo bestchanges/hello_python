@@ -126,6 +126,13 @@ Project
 - flask: templates
 - flask: production app server
 
+## jupyter notebooks
+- jupyter notebook 
+- jupyterhub 
+- jupyterlab 
+- [realtime co-editing](https://www.youtube.com/watch?v=dSjvK-Z3o3U&feature=youtu.be&t=1013)
+- https://proglib.io/p/jupyter/
+- [JupytherHub in Yandex](https://www.youtube.com/watch?v=I49jOFSCV00&feature=youtu.be&t=211) 
 
 # Backlog
 
@@ -136,7 +143,6 @@ Project
 - type hints https://www.python.org/dev/peps/pep-0484/
 - docker+python
 - docker-compose
-- jupyter notebooks
 - queues: rabbitmq
 - QA automation
 - test performance of web-service
