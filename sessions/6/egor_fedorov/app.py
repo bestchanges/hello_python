@@ -1,15 +1,16 @@
 import uuid
 
-from flask import Flask, jsonify, request, redirect
+from flask import Flask, jsonify, request, redirect, session
 
 app = Flask(__name__)
+app.secret_key = 'test'
 
 
 def gen_id():
     return str(uuid.uuid4())
 
 
-items = [
+default_items = [
     {
         'title': 'First',
         'id': gen_id(),
@@ -25,14 +26,17 @@ items = [
 
 @app.route("/items", methods=('GET',))
 def get_items():
+    items = session.setdefault('items', default_items)
     return jsonify(items)
 
 
 @app.route("/items", methods=('POST',))
 def post_items():
+    items = session.setdefault('items', default_items)
     item = request.get_json()
     item['id'] = gen_id()
     items.append(item)
+    session.modified = True
     return jsonify(item)
 
 
