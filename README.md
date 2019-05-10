@@ -14,5 +14,5 @@ collaborative study of python language.
 - go to [sessions](sessions/) and start study
 - take time to [review and discuss other's students projects](https://github.com/bestchanges/hello_python/commits/master)
 - refer to [learning resources](https://github.com/bestchanges/hello_python/wiki/Learning-resources)
-- view our [study plan](https://github.com/bestchanges/hello_python/wiki/Study-Plan)
+- view our [study plan](STUDY_PLAN.md)
 
