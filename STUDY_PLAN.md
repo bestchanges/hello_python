@@ -62,7 +62,16 @@
 Project
 - write WebSockets based chat using TDD
 
-## [Session 8](sessions/8/) 
+## [Session 8](sessions/8/) Object Oriented Programming
+- OOP, classes https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc
+  - inheritance
+  - class methods (not functions) 
+  - getter/setters https://www.youtube.com/watch?v=jCzT9XFZ5bw
+  - [name mangling](https://dbader.org/blog/meaning-of-underscores-in-python) - Refer to part about `__var`
+- duck typing
+
+
+# Unscheduled sessions
 
 ## Python Basics (continue) 
 - variables scope https://www.youtube.com/watch?v=QVdf0LgmICw 
@@ -76,8 +85,6 @@ Project
   - https://habr.com/ru/post/337314/
 - context managers (with statement) https://docs.python.org/3/reference/compound_stmts.html#the-with-statement
 
-
-# Unscheduled sessions
 
 ## Good console app
 - run own console with https://docs.python.org/3/library/readline.html
@@ -104,14 +111,6 @@ Project
 ## AsyncIO
 - coroutines https://docs.python.org/3/reference/compound_stmts.html#coroutines
 - [Debug asyncio in PyCharm](https://youtu.be/9x9xIR9tFlc)
-
-## Object Oriented Programming
-- OOP, classes https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc
-  - inheritance
-  - class methods (not functions) 
-  - getter/setters https://www.youtube.com/watch?v=jCzT9XFZ5bw
-  - [name mangling](https://dbader.org/blog/meaning-of-underscores-in-python) - Refer to part about `__var`
-- duck typing
 
 ## Parallel execution 
 - threading 
