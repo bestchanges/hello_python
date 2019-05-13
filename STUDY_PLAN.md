@@ -112,6 +112,11 @@ Project
 ## AsyncIO
 - coroutines https://docs.python.org/3/reference/compound_stmts.html#coroutines
 - [Debug asyncio in PyCharm](https://youtu.be/9x9xIR9tFlc)
+- https://docs.python.org/3/library/asyncio.html
+
+## aiohttp
+- client
+- server
 
 ## Parallel execution 
 - threading 
@@ -192,7 +197,8 @@ Project
   - https://landscape.io/#
   - https://www.python.org/dev/peps/pep-0008/
   - pycodestyle
-- https://docs.python.org/3.8/whatsnew/index.html  
+- breakpoint https://docs.python.org/dev/library/functions.html#breakpoint
+- https://github.com/pyenv/pyenv  
 
 # Backlog projects
 + trading bot
