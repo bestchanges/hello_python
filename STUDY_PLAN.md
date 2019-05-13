@@ -83,6 +83,7 @@ Project
   - also class generators
   - https://wiki.python.org/moin/Generators
   - https://habr.com/ru/post/337314/
+  - https://docs.python.org/3/howto/functional.html#passing-values-into-a-generator
 - context managers (with statement) https://docs.python.org/3/reference/compound_stmts.html#the-with-statement
 
 
@@ -117,12 +118,6 @@ Project
 - multiprocessing
 - GIL 
   - https://opensource.com/article/17/4/grok-gil
-
-## Python modules overview 
-- itertools https://docs.python.org/3.7/library/itertools.html
-- collections https://docs.python.org/3/library/collections.html
-- defaultdict() https://docs.quantifiedcode.com/python-anti-patterns/correctness/not_using_defaultdict.html
-- datetime
 
 ## Flask (continue)
 - flask: data storage
@@ -167,6 +162,17 @@ Project
 
 # Backlog
 
+- functional programming https://docs.python.org/3/howto/functional.html
+- create packages distributions
+- itertools https://docs.python.org/3.7/library/itertools.html
+- collections https://docs.python.org/3/library/collections.html
+- defaultdict() https://docs.quantifiedcode.com/python-anti-patterns/correctness/not_using_defaultdict.html
+- datetime
+- inspect, tokenize
+- math, statistics
+- os, pathlib
+- shutil
+- tkinter
 - data model https://docs.python.org/3/reference/datamodel.html
   - magic methods https://docs.python.org/3/reference/datamodel.html#special-method-names
 - execution model https://docs.python.org/3/reference/executionmodel.html
@@ -186,6 +192,7 @@ Project
   - https://landscape.io/#
   - https://www.python.org/dev/peps/pep-0008/
   - pycodestyle
+- https://docs.python.org/3.8/whatsnew/index.html  
 
 # Backlog projects
 + trading bot
