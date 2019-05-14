@@ -17,6 +17,7 @@
 - https://docs.python.org/3/tutorial/classes.html
 - [Python OOP Tutorial (youtube, en)](https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc) 6 videos * 15min
 - abstract classess https://docs.python.org/3/library/abc.html
+- Mixins: [mixins (ru)](http://old.pynsk.ru/posts/2015/Oct/01/interesnye-kontseptsii-mixiny-primesi/#.XNqH03UzZNw), [DictMixin](https://docs.python.org/2/library/userdict.html#UserDict.DictMixin)
 - https://docs.python.org/3/library/operator.html
 - RU https://proglib.io/p/python-oop/, https://proglib.io/p/metaclasses-in-python/
 
