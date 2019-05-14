@@ -62,7 +62,16 @@
 Project
 - write WebSockets based chat using TDD
 
-## [Session 8](sessions/8/) 
+## [Session 8](sessions/8/) Object Oriented Programming
+- OOP, classes https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc
+  - inheritance
+  - class methods (not functions) 
+  - getter/setters https://www.youtube.com/watch?v=jCzT9XFZ5bw
+  - [name mangling](https://dbader.org/blog/meaning-of-underscores-in-python) - Refer to part about `__var`
+- duck typing
+
+
+# Unscheduled sessions
 
 ## Python Basics (continue) 
 - variables scope https://www.youtube.com/watch?v=QVdf0LgmICw 
@@ -74,21 +83,7 @@ Project
   - also class generators
   - https://wiki.python.org/moin/Generators
   - https://habr.com/ru/post/337314/
-- context managers (with statement) https://docs.python.org/3/reference/compound_stmts.html#the-with-statement
-
-
-# Unscheduled sessions
-
-## 8 Python Basics (continue) 
-- variables scope https://www.youtube.com/watch?v=QVdf0LgmICw 
-- Decorators with arguments: https://www.youtube.com/watch?v=KlBPCzcQNU8
-- free variables
-  - closures https://www.youtube.com/watch?v=swU3c34d2NQ
-- sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
-- iterators, generators 
-  - also class generators
-  - https://wiki.python.org/moin/Generators
-  - https://habr.com/ru/post/337314/
+  - https://docs.python.org/3/howto/functional.html#passing-values-into-a-generator
 - context managers (with statement) https://docs.python.org/3/reference/compound_stmts.html#the-with-statement
 
 
@@ -117,26 +112,17 @@ Project
 ## AsyncIO
 - coroutines https://docs.python.org/3/reference/compound_stmts.html#coroutines
 - [Debug asyncio in PyCharm](https://youtu.be/9x9xIR9tFlc)
+- https://docs.python.org/3/library/asyncio.html
 
-## Object Oriented Programming
-- OOP, classes https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc
-  - inheritance
-  - class methods (not functions) 
-  - getter/setters https://www.youtube.com/watch?v=jCzT9XFZ5bw
-  - [name mangling](https://dbader.org/blog/meaning-of-underscores-in-python) - Refer to part about `__var`
-- duck typing
+## aiohttp
+- client
+- server
 
 ## Parallel execution 
 - threading 
 - multiprocessing
 - GIL 
   - https://opensource.com/article/17/4/grok-gil
-
-## Python modules overview 
-- itertools https://docs.python.org/3.7/library/itertools.html
-- collections https://docs.python.org/3/library/collections.html
-- defaultdict() https://docs.quantifiedcode.com/python-anti-patterns/correctness/not_using_defaultdict.html
-- datetime
 
 ## Flask (continue)
 - flask: data storage
@@ -181,6 +167,17 @@ Project
 
 # Backlog
 
+- functional programming https://docs.python.org/3/howto/functional.html
+- create packages distributions
+- itertools https://docs.python.org/3.7/library/itertools.html
+- collections https://docs.python.org/3/library/collections.html
+- defaultdict() https://docs.quantifiedcode.com/python-anti-patterns/correctness/not_using_defaultdict.html
+- datetime
+- inspect, tokenize
+- math, statistics
+- os, pathlib
+- shutil
+- tkinter
 - data model https://docs.python.org/3/reference/datamodel.html
   - magic methods https://docs.python.org/3/reference/datamodel.html#special-method-names
 - execution model https://docs.python.org/3/reference/executionmodel.html
@@ -200,6 +197,8 @@ Project
   - https://landscape.io/#
   - https://www.python.org/dev/peps/pep-0008/
   - pycodestyle
+- breakpoint https://docs.python.org/dev/library/functions.html#breakpoint
+- https://github.com/pyenv/pyenv  
 
 # Backlog projects
 + trading bot

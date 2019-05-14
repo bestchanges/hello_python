@@ -10,13 +10,13 @@ happy_tickets = list() # list for happy tickets
 # 6-digit ticket number generator
 def __format_number_generator(number):
     ticket = "%06d" % number
-    yield ticket
+    return ticket
 
 
 # checks if it is a happy ticket
 def __happy_check(last, input_set, output_list):
     for i in input_set:
-        value = next(__format_number_generator(i))
+        value = __format_number_generator(i)
         if sum(int(i) for i in value[:3]) == sum(int(i) for i in value[3:]):
             output_list.append(value)
     return output_list
