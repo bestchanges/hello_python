@@ -9,7 +9,7 @@
 - abstract classes
 
 ## Screencast
-TBD
+[![Hello Python Session](http://img.youtube.com/vi/BFs84FswSY0/0.jpg)](http://www.youtube.com/watch?v=BFs84FswSY0 "Hello Python Session")
 
 
 ## Materials
@@ -22,32 +22,17 @@ TBD
 
 
 ## Project
-## The World
-There is a world 100x100 cells. 
+## Family
+1. Написать классы для обозначения отношений и взаимодействия людей в семье
+(с соответствующими свойствами и методами).
+Должны быть классы для обозначения человека, отца, матери, мужа, жены, ребенка...
 
-Each ground call can contain plant on it. 
-Plants can:
-- grow from seed to mature plant
-- give new seeds to nearby free cells
-- can be eaten (partially or fully) by herbivore animal 
-- die (when it's time comes)
+2. Через перегрузку операторов сделать действия:
+- male & female => создается семья
+- male % female => секс (с вероятностью зачатия ребенка)
+- ~ female => рождение ребенка
+- ...
 
-There are also animals that living on the ground.
-Animal can see limit space around it (let say 3 cells).
-Animals can perform actions. Each action take specified amount of living power.
-Actions:
-- walk
-- eat (carnivals eat other creatures)
-- die (when living power goes to zero, or when the time comes)
+делать провреку на допустимость операции, например male & male => должно бросать Exception (в нашем мире =)
 
-Make a model of such world. Visualize objects with chars/colors.
-
-Advanced: 
-Plants:
-- make several plant types
-- some plants can suppress other kind of plants nearby slowly killing them
-Animals:
-- sleep
-- lookup for partner
-- breed (you need male and female that want to breed on nearby cells)
-- born some children
+3. написать код для создание примера семьи
