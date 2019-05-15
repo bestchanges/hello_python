@@ -67,8 +67,18 @@ Project
   - inheritance
   - class methods (not functions) 
   - getter/setters https://www.youtube.com/watch?v=jCzT9XFZ5bw
-  - [name mangling](https://dbader.org/blog/meaning-of-underscores-in-python) - Refer to part about `__var`
+  - name mangling
 - duck typing
+
+## [Session 9](sessions/9/) Jupyter Notebooks
+
+- jupyter notebook 
+- jupyterhub 
+- jupyterlab 
+- [realtime co-editing](https://www.youtube.com/watch?v=dSjvK-Z3o3U&feature=youtu.be&t=1013)
+- https://proglib.io/p/jupyter/
+- [JupytherHub in Yandex](https://www.youtube.com/watch?v=I49jOFSCV00&feature=youtu.be&t=211)
+- https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks 
 
 
 # Unscheduled sessions
@@ -151,15 +161,6 @@ Project
   - https://github.com/maximdanilchenko/aiohttp-apispec
   - https://github.com/cr0hn/aiohttp-swagger
 
-
-## jupyter notebooks
-- jupyter notebook 
-- jupyterhub 
-- jupyterlab 
-- [realtime co-editing](https://www.youtube.com/watch?v=dSjvK-Z3o3U&feature=youtu.be&t=1013)
-- https://proglib.io/p/jupyter/
-- [JupytherHub in Yandex](https://www.youtube.com/watch?v=I49jOFSCV00&feature=youtu.be&t=211)
-- https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks 
 
 ## aiohttp
 - presentations by Svetlov
