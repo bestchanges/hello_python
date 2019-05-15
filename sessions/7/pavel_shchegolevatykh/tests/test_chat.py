@@ -62,12 +62,12 @@ def test_join_room(client1: SocketIOTestClient, client2: SocketIOTestClient):
     assert in_received(msg, client2.get_received())
 
 
-# this test does not work as it should
-# I don't have time to study the whole WebSockets thing or flask socket io to make it work
-# takes some tome
 def test_send_to_room(client1: SocketIOTestClient, client2: SocketIOTestClient):
     room = 'test_room'
     client1_name = 'Bill'
+    client2_name = 'Gill'
+    client1.emit('join', {'room': room, 'name': client1_name})
+    client2.emit('join', {'room': room, 'name': client2_name})
     msg = f"Hello from {client1_name}"
     client1.send({'message': msg, 'room': room}, True)
     assert in_received(msg, client1.get_received())
