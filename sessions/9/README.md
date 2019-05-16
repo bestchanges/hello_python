@@ -1,10 +1,17 @@
 # Session 9 Jupyter Notebooks
 
-- jupyter notebooks 
-- jupyterhub 
-- jupyterlab 
+- jupyter notebooks
+- jupyterhub
+- jupyterlab
+- jupyter
+  - install
+  - hotkeys
+  - magics
+  - markup
+  - matplotlib
 
 ## Screencast
+[![Hello Python Session](http://img.youtube.com/vi/dhOmcpqTYAw/0.jpg)](http://www.youtube.com/watch?v=dhOmcpqTYAw "Hello Python Session")
 
 
 ## Materials
@@ -20,4 +27,4 @@
 ## Project
 - setup jupyter
 - create first notebook with some project code
-- push it to '9/<yourname>/your.ipynb' 
+- push it to '9/_yourname_/_your_.ipynb' 

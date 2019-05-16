@@ -7,7 +7,7 @@ def cache(function):
     @wraps(function)
     def wrapper(*args, **kwargs):
         # for simplicity
-        key = str(args) + str(kwargs)
+        key = repr(args) + repr(kwargs)
         if key not in cache:
             cache[key] = function(*args, **kwargs)
         return cache[key]
