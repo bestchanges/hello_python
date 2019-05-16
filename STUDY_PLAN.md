@@ -201,7 +201,7 @@ Project
 - breakpoint https://docs.python.org/dev/library/functions.html#breakpoint
 - https://github.com/pyenv/pyenv  
 - https://tox.readthedocs.io/en/latest/
-- pipfile
+- [pipenv, Kenneth Reitz (youtube, 30m)](https://www.youtube.com/watch?v=GBQAKldqgZs)
 
 # Backlog projects
 + trading bot

@@ -27,4 +27,4 @@
 ## Project
 - setup jupyter
 - create first notebook with some project code
-- push it to '9/<yourname>/<your>.ipynb' 
+- push it to '9/_yourname_/_your_.ipynb' 
