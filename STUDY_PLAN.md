@@ -84,7 +84,10 @@ Project
 # Unscheduled sessions
 
 ## Python Basics (continue) 
-- variables scope https://www.youtube.com/watch?v=QVdf0LgmICw 
+- variables scope 
+  - https://www.youtube.com/watch?v=QVdf0LgmICw 
+  - [Introduction to namespaces and scopes](https://nbviewer.jupyter.org/github/rasbt/python_reference/blob/master/tutorials/scope_resolution_legb_rule.ipynb#introduction)
+  - https://www.programiz.com/python-programming/namespace
 - Decorators with arguments: https://www.youtube.com/watch?v=KlBPCzcQNU8
 - free variables
   - closures https://www.youtube.com/watch?v=swU3c34d2NQ
@@ -166,10 +169,14 @@ Project
 - presentations by Svetlov
 - https://docs.aiohttp.org/en/stable/third_party.html
 
+## Python bytecode
+  - https://opensource.com/article/18/4/introduction-python-bytecode
+  - https://docs.python.org/3/library/dis.html
+
+
 # Backlog
 
 - functional programming https://docs.python.org/3/howto/functional.html
-- create packages distributions
 - itertools https://docs.python.org/3.7/library/itertools.html
 - collections https://docs.python.org/3/library/collections.html
 - defaultdict() https://docs.quantifiedcode.com/python-anti-patterns/correctness/not_using_defaultdict.html
@@ -182,7 +189,8 @@ Project
 - data model https://docs.python.org/3/reference/datamodel.html
   - magic methods https://docs.python.org/3/reference/datamodel.html#special-method-names
 - execution model https://docs.python.org/3/reference/executionmodel.html
-- publish package with setuptools
+- create packages distributions
+  - publish package with setuptools
 - type hints https://www.python.org/dev/peps/pep-0484/
 - docker+python
 - docker-compose
@@ -198,10 +206,11 @@ Project
   - https://landscape.io/#
   - https://www.python.org/dev/peps/pep-0008/
   - pycodestyle
-- breakpoint https://docs.python.org/dev/library/functions.html#breakpoint
+- [breakpoint(), since 3.7](https://docs.python.org/dev/library/functions.html#breakpoint)
 - https://github.com/pyenv/pyenv  
 - https://tox.readthedocs.io/en/latest/
 - [pipenv, Kenneth Reitz (youtube, 30m)](https://www.youtube.com/watch?v=GBQAKldqgZs)
+
 
 # Backlog projects
 + trading bot
