@@ -20,7 +20,8 @@
     - [eventloop](https://docs.python.org/3/library/asyncio-eventloop.html)
     - [Future](https://docs.python.org/3/library/asyncio-future.html)
     - [Tasks](https://docs.python.org/3/library/asyncio-task.html)    
-- file IO, network IO
+- "async" file IO
+    - https://github.com/python/asyncio/wiki/ThirdParty#filesystem
 - eventloops
     - uvloop
 - https://habr.com/ru/post/337420/
