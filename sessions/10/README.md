@@ -22,6 +22,7 @@
     - [Tasks](https://docs.python.org/3/library/asyncio-task.html)    
 - "async" file IO
     - https://github.com/python/asyncio/wiki/ThirdParty#filesystem
+    - [explained in StackOverflow](https://stackoverflow.com/questions/34699948/does-asyncio-supports-asynchronous-i-o-for-file-operations/42063265#42063265)
 - eventloops
     - uvloop
 - https://habr.com/ru/post/337420/
