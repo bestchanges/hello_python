@@ -80,6 +80,11 @@ Project
 - [JupytherHub in Yandex](https://www.youtube.com/watch?v=I49jOFSCV00&feature=youtu.be&t=211)
 - https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks 
 
+## [Session 10](sessions/10/) AsyncIO
+- coroutines
+- eventloop
+- asyncio
+
 
 # Unscheduled sessions
 
@@ -121,11 +126,6 @@ Project
   - https://coverage.readthedocs.io/en/coverage-4.2/index.html
 - docstrings
 - doc generation
-
-## AsyncIO
-- coroutines https://docs.python.org/3/reference/compound_stmts.html#coroutines
-- [Debug asyncio in PyCharm](https://youtu.be/9x9xIR9tFlc)
-- https://docs.python.org/3/library/asyncio.html
 
 ## aiohttp
 - client
