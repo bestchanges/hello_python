@@ -210,7 +210,11 @@ Project
 - https://github.com/pyenv/pyenv  
 - https://tox.readthedocs.io/en/latest/
 - [pipenv, Kenneth Reitz (youtube, 30m)](https://www.youtube.com/watch?v=GBQAKldqgZs)
-
+- Sanic
+Denis Tomilin:
+- Django REST Framework, Django Channels. 
+- Отдельно советую ввести в курс дела CGI, WSGI, AG
+- Я бы советовал пройти весь development cycle разработки веб-приложения используя стек Python + Django + DRF, с деплойментом и рассказ про опции: разворачивать это дело на хероку, на машинке с gunicorn/uwsgi + nginx, на k8s
 
 # Backlog projects
 + trading bot
