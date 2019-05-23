@@ -1,8 +1,6 @@
 ## Table of Contens
-- [Sessions](#sessions)
 - [Unscheduled sessions](#unscheduled-sessions)
 - [Backlog](#backlog)
-
 
 
 # Unscheduled sessions
@@ -84,9 +82,11 @@
   - https://opensource.com/article/18/4/introduction-python-bytecode
   - https://docs.python.org/3/library/dis.html
 
-
 # Backlog
 
+- asyncio continue
+  - Exceptions handling
+  - sync-async code marriage
 - collections https://docs.python.org/3/library/collections.html
   - defaultdict(int)
   - deque
@@ -100,6 +100,7 @@
 - inspect, tokenize
 - math, statistics
 - os, pathlib
+- requests (with Session)
 - shutil
 - tkinter
 - data model https://docs.python.org/3/reference/datamodel.html
@@ -134,6 +135,7 @@ Denis Tomilin:
 - Data Visualization VEGA https://www.youtube.com/watch?v=ms29ZPUKxbU
 
 # Backlog projects
++ [Python Face Recognition Tutorial](https://www.youtube.com/watch?v=QSTnwsZj2yc), youtube, en, 30m - контент так себе, а вот библиотеку надо попробовать
 + trading bot
 + todoist_automation
 + currency_exchange_rates
