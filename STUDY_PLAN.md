@@ -3,87 +3,6 @@
 - [Unscheduled sessions](#unscheduled-sessions)
 - [Backlog](#backlog)
 
-# Sessions
-## [Session 1](sessions/1/)
-- intro: projects, zen, code_style
-- install & setup (PyCharm)
-- run, debug, python console
-- types (numbers, strings, bool)
-- read/write stdin/stdout
-- variables
-- control flow (if, for, while)
-+ projects: guess_game
-
-## [Session 2](sessions/2/)
-- complex types (tuple, array, dict, set)
-- iterables, with statement (need to repeat)
-- exceptions
-+ projects/kalimbas
-
-## [Session 3](sessions/3/)
-- functions
-- lambda-functions 
-- generators 
-+ projects/happy_tickets
-+ projects/prime_numbers
-+ projects/gallow_game
-
-## [Session 4](sessions/4/)
-- modules
-- `__main__`
-- files IO
-  - BOM handling encoding 'utf-8-sig'
-- JSON data
-- project:  exchange rate service
-
-## [Session 5](sessions/5/)
-- packages: pip, distutils, setuptools
-- venv, virtualenv, virtualenvwrapper 
-- networking: 
-  - sockets
-  - HTTP clients. requests, urllib, urllib2
-  - asyncio (not yet)
-- project: GitHub languages popularity
-
-## [Session 6](sessions/6/) RESTful backend
-- Flask
-  - routes
-  - endpoints
-  - dev mode server
-- project: todolist backend 
-- decorators
-  - project: cache function result with decorator
-
-## [Session 7](sessions/7/) Test Driven Development
-- Test Driven Development
-- PyTest
-- WebSockets
-
-Project
-- write WebSockets based chat using TDD
-
-## [Session 8](sessions/8/) Object Oriented Programming
-- OOP, classes https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc
-  - inheritance
-  - class methods (not functions) 
-  - getter/setters https://www.youtube.com/watch?v=jCzT9XFZ5bw
-  - name mangling
-- duck typing
-
-## [Session 9](sessions/9/) Jupyter Notebooks
-
-- jupyter notebook 
-- jupyterhub 
-- jupyterlab 
-- [realtime co-editing](https://www.youtube.com/watch?v=dSjvK-Z3o3U&feature=youtu.be&t=1013)
-- https://proglib.io/p/jupyter/
-- [JupytherHub in Yandex](https://www.youtube.com/watch?v=I49jOFSCV00&feature=youtu.be&t=211)
-- https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks 
-
-## [Session 10](sessions/10/) AsyncIO
-- coroutines
-- eventloop
-- asyncio
 
 
 # Unscheduled sessions
@@ -127,10 +46,6 @@ Project
 - docstrings
 - doc generation
 
-## aiohttp
-- client
-- server
-
 ## Parallel execution 
 - threading 
 - multiprocessing
@@ -165,10 +80,6 @@ Project
   - https://github.com/cr0hn/aiohttp-swagger
 
 
-## aiohttp
-- presentations by Svetlov
-- https://docs.aiohttp.org/en/stable/third_party.html
-
 ## Python bytecode
   - https://opensource.com/article/18/4/introduction-python-bytecode
   - https://docs.python.org/3/library/dis.html
@@ -176,9 +87,14 @@ Project
 
 # Backlog
 
+- collections https://docs.python.org/3/library/collections.html
+  - defaultdict(int)
+  - deque
+  - OrderedDict - every dict sinse 3.7
+  - Counter
+- HTTP load tests [Asyncio/Aiohttp — предел производительности](https://www.youtube.com/watch?v=ctLi6_mrPLc) youtube, ru, 20m
 - functional programming https://docs.python.org/3/howto/functional.html
 - itertools https://docs.python.org/3.7/library/itertools.html
-- collections https://docs.python.org/3/library/collections.html
 - defaultdict() https://docs.quantifiedcode.com/python-anti-patterns/correctness/not_using_defaultdict.html
 - datetime
 - inspect, tokenize
@@ -215,6 +131,7 @@ Denis Tomilin:
 - Django REST Framework, Django Channels. 
 - Отдельно советую ввести в курс дела CGI, WSGI, AG
 - Я бы советовал пройти весь development cycle разработки веб-приложения используя стек Python + Django + DRF, с деплойментом и рассказ про опции: разворачивать это дело на хероку, на машинке с gunicorn/uwsgi + nginx, на k8s
+- Data Visualization VEGA https://www.youtube.com/watch?v=ms29ZPUKxbU
 
 # Backlog projects
 + trading bot
@@ -224,3 +141,4 @@ Denis Tomilin:
 + object recognition
 + smart home gadgets
 + chat bot (telegram, alice, skype)
+- https://www.home-assistant.io/
