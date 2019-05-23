@@ -26,7 +26,8 @@
 - eventloops
     - uvloop
 - https://habr.com/ru/post/337420/
-- [Debug asyncio in PyCharm](https://youtu.be/9x9xIR9tFlc)
+- [Asyncio «Asyncio сегодня и завтра»](https://www.youtube.com/watch?v=3rSAtD2gKQE) youtube, 1h -обзор развития asyncio, архитектура async await, как правильно asyncio
+- [Андрей Светлов: "Подводные камни asyncio"](https://www.youtube.com/watch?v=GLN_xo4Awcc) youtube, ru, 1h
 
 
 ## Project
