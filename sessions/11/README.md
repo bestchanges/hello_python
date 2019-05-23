@@ -3,6 +3,7 @@
 - server
 
 ## Screencast
+[![Hello Python Session](http://img.youtube.com/vi/CErCJvypj-U/0.jpg)](http://www.youtube.com/watch?v=CErCJvypj-U "Hello Python Session")
 
 
 ## Materials
