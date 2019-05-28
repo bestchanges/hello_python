@@ -1,0 +1,17 @@
+{
+  "base_api_url": "https://api.github.com",
+  "auth_token": "<GITHUB_TOKEN>",
+  "repo": {
+    "owner": "bestchanges",
+    "name": "hello_python",
+    "branch": "master",
+    "path": "sessions",
+    "skip": [
+      "1"
+    ]
+  },
+  "scores": {
+    "task": 10,
+    "comment": 3
+  }
+}
