@@ -66,6 +66,14 @@
   - https://docs.python.org/3/library/dis.html
 
 # Backlog
+- iterators, generators 
+  - also class generators
+  - https://wiki.python.org/moin/Generators
+  - https://habr.com/ru/post/337314/
+  - https://docs.python.org/3/howto/functional.html#passing-values-into-a-generator
+- Decorators
+    - closures https://www.youtube.com/watch?v=swU3c34d2NQ
+    - Decorators with arguments: https://www.youtube.com/watch?v=KlBPCzcQNU8
 
 - asyncio continue
   - Exceptions handling
@@ -74,10 +82,25 @@
   - defaultdict(int)
   - deque
   - OrderedDict - every dict sinse 3.7
+  - [heapq](https://docs.python.org/3.0/library/heapq.html)
+  - [bisect](https://docs.python.org/3.0/library/bisect.html)
+  - [array](https://docs.python.org/3.0/library/array.html)
+  - [queue](https://docs.python.org/3.0/library/queue.html)
   - Counter
+- data manipulation
+  - [copy](https://docs.python.org/3.0/library/copy.html)
+  - sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
+  - caching with [weakref](https://docs.python.org/3.0/library/weakref.html)
+  - [itertools](https://docs.python.org/3.7/library/itertools.html)
+- GUI with Tk
+  - https://docs.python.org/3.0/library/tk.html
+- Internationalization
+  - https://docs.python.org/3.0/library/i18n.html  
+- scheduled execution [sched](https://docs.python.org/3.0/library/sched.html)
+- repr vs str
+  - https://docs.python.org/3.0/library/reprlib.html
 - HTTP load tests [Asyncio/Aiohttp — предел производительности](https://www.youtube.com/watch?v=ctLi6_mrPLc) youtube, ru, 20m
 - functional programming https://docs.python.org/3/howto/functional.html
-- itertools https://docs.python.org/3.7/library/itertools.html
 - defaultdict() https://docs.quantifiedcode.com/python-anti-patterns/correctness/not_using_defaultdict.html
 - datetime
 - inspect, tokenize
