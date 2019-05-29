@@ -114,7 +114,9 @@
 - execution model https://docs.python.org/3/reference/executionmodel.html
 - create packages distributions
   - publish package with setuptools
-- type hints https://www.python.org/dev/peps/pep-0484/
+- type hints 
+  - https://docs.python.org/3/library/typing.html
+  - https://www.python.org/dev/peps/pep-0484/
 - docker+python
 - docker-compose
 - queues
@@ -133,7 +135,9 @@
 - https://github.com/pyenv/pyenv  
 - https://tox.readthedocs.io/en/latest/
 - [pipenv, Kenneth Reitz (youtube, 30m)](https://www.youtube.com/watch?v=GBQAKldqgZs)
-- Sanic
+- [Sanic](https://sanic.readthedocs.io/en/latest/)
+- https://www.pygame.org/tags/all
+
 Denis Tomilin:
 - Django REST Framework, Django Channels. 
 - Отдельно советую ввести в курс дела CGI, WSGI, AG
