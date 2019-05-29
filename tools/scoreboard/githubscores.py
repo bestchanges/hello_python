@@ -149,7 +149,7 @@ class GithubScores:
         sessions = self._get_sessions()
         result = dict()
         for path in sessions:
-            folders = gh._get_session_folders(path)
+            folders = self._get_session_folders(path)
             names = GithubScores._convert_folders_to_names(folders)
             for name in names:
                 if name in result:
@@ -164,7 +164,7 @@ class GithubScores:
         :return: Dictionary like {'First Last': score} containing person's scores for specified session tasks.
         """
         result = dict()
-        folders = gh._get_session_folders(path)
+        folders = self._get_session_folders(path)
         names = GithubScores._convert_folders_to_names(folders)
         for name in names:
             if name in result:
