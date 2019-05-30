@@ -78,15 +78,6 @@
 - asyncio continue
   - Exceptions handling
   - sync-async code marriage
-- collections https://docs.python.org/3/library/collections.html
-  - defaultdict(int)
-  - deque
-  - OrderedDict - every dict sinse 3.7
-  - [heapq](https://docs.python.org/3.0/library/heapq.html)
-  - [bisect](https://docs.python.org/3.0/library/bisect.html)
-  - [array](https://docs.python.org/3.0/library/array.html)
-  - [queue](https://docs.python.org/3.0/library/queue.html)
-  - Counter
 - data manipulation
   - [copy](https://docs.python.org/3.0/library/copy.html)
   - sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
@@ -123,6 +114,7 @@
   - rabbitmq
   - nameko
 - QA automation
+- else statements in loops
 - test performance of web-service
 - Django web site
 - desktop UI (with Tkinter?)
