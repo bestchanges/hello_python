@@ -102,7 +102,9 @@ Project
 - client
 - server
 
-## [Session 12](sessions/12/) Python Basics (continue)
+# [Session 12](sessions/12/) Python Basics (continue)
+- variables scope
+- context managers
 
-- Variables scope
-- Context managers (with statement)
+# [Session 13](sessions/13/) data structures 
+- 
