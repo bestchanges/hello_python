@@ -86,6 +86,7 @@
     - [bisect](https://docs.python.org/3.0/library/bisect.html)
     - [array](https://docs.python.org/3.0/library/array.html)
     - [queue](https://docs.python.org/3.0/library/queue.html)
+    - [dataclasses](https://docs.python.org/3/library/dataclasses.html)
 - External
     - [expiringdict](https://github.com/mailgun/expiringdict)
     - io.StringIO
@@ -98,7 +99,6 @@
 - Decorators
     - closures https://www.youtube.com/watch?v=swU3c34d2NQ
     - Decorators with arguments: https://www.youtube.com/watch?v=KlBPCzcQNU8
-
 - asyncio continue
   - Exceptions handling
   - sync-async code marriage
