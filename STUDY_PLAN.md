@@ -160,6 +160,9 @@ Denis Tomilin:
 - Я бы советовал пройти весь development cycle разработки веб-приложения используя стек Python + Django + DRF, с деплойментом и рассказ про опции: разворачивать это дело на хероку, на машинке с gunicorn/uwsgi + nginx, на k8s
 - Data Visualization VEGA https://www.youtube.com/watch?v=ms29ZPUKxbU
 
+# Interresting
+- [Сколько объектов выделяет Python, выполняя скрипты?](https://habr.com/ru/post/418305/) 
+
 # Backlog projects
 + [Python Face Recognition Tutorial](https://www.youtube.com/watch?v=QSTnwsZj2yc), youtube, en, 30m - контент так себе, а вот библиотеку надо попробовать
 + trading bot
