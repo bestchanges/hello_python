@@ -5,7 +5,9 @@ from githubscores import GithubScores
 from collections import Counter
 
 logging.basicConfig()
-logging.getLogger().setLevel(logging.DEBUG)
+logging.getLogger().setLevel(logging.INFO)
+logging.getLogger('googleapiclient.discovery_cache').setLevel(logging.ERROR)
+logging.getLogger('googleapiclient.discovery').setLevel(logging.WARNING)
 # These two lines enable debugging at httplib level (requests->urllib3->http.client)
 # You will see the REQUEST, including HEADERS and DATA, and RESPONSE with HEADERS but without DATA.
 # The only thing missing will be the response.body which is not logged.
@@ -38,9 +40,11 @@ if __name__ == '__main__':
 
     users_set = {user[0] for user in users if user}
     scores_set = {user for user in total_scores}
+    logger.info(f"There are {len(scores_set)} users with positive scores")
     diff = scores_set - users_set
     logger.warning(f"Missing names for users: {diff}")
 
     scores = [total_scores.get(user[0] if user else None, 0) for user in users]
 
     set_sheet_data(SPREADSHEET_ID, RANGE_SCORE, scores)
+    logger.info("Completed. OK")
