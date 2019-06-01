@@ -79,11 +79,12 @@
     - ChainMap
     - Named Tuple
     - OrderedDict 
-        - [not redundant ever after 3.7](https://stackoverflow.com/questions/50872498/will-ordereddict-become-redundant-in-python-3-7)
+        - [not redundant even after 3.7](https://stackoverflow.com/questions/50872498/will-ordereddict-become-redundant-in-python-3-7)
     - Counter
 - in core library:
     - [heapq](https://docs.python.org/3.0/library/heapq.html)
-    - [bisect](https://docs.python.org/3.0/library/bisect.html)
+    - [bisect](https://
+    docs.python.org/3.0/library/bisect.html)
     - [array](https://docs.python.org/3.0/library/array.html)
     - [queue](https://docs.python.org/3.0/library/queue.html)
     - [dataclasses](https://docs.python.org/3/library/dataclasses.html)

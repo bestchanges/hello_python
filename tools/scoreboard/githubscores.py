@@ -49,11 +49,7 @@ class GithubScores:
                                        'contents',
                                        self._config['repo']['path'])
         res = self._session.get(url)
-        try:
-            res.raise_for_status()
-        except requests.exceptions.HTTPError as err:
-            print(err)
-            return None
+        res.raise_for_status()
         sessions = res.json()
         sessions = list(filter(lambda f: f['type'] == 'dir', sessions))
         skip_sessions = [GithubScores._slash_join(self._config['repo']['path'], s)
@@ -66,11 +62,7 @@ class GithubScores:
                                        'contents',
                                        path)
         res = self._session.get(url)
-        try:
-            res.raise_for_status()
-        except requests.exceptions.HTTPError as err:
-            print(err)
-            return None
+        res.raise_for_status()
         content = res.json()
         folders = list(filter(lambda f: f['type'] == 'dir', content))
         return list(map(lambda f: f['path'], folders))
@@ -85,11 +77,7 @@ class GithubScores:
         url = GithubScores._slash_join(self._get_repo_api_url(),
                                        'commits')
         res = self._session.get(url, params={'path': path})
-        try:
-            res.raise_for_status()
-        except requests.exceptions.HTTPError as err:
-            print(err)
-            return None
+        res.raise_for_status()
         commits = res.json()
         return list(map(lambda c: c['author']['login'] if c['author']
                         else c['commit']['author']['name'], commits))
@@ -98,11 +86,7 @@ class GithubScores:
         url = GithubScores._slash_join(self._get_repo_api_url(),
                                        'comments')
         res = self._session.get(url)
-        try:
-            res.raise_for_status()
-        except requests.exceptions.HTTPError as err:
-            print(err)
-            return None
+        res.raise_for_status()
         comments = res.json()
         comments = GithubScores._parse_comments(comments)
         return comments
@@ -111,32 +95,20 @@ class GithubScores:
         url = GithubScores._slash_join(self._get_repo_api_url(),
                                        'pulls')
         res = self._session.get(url, params={'state': 'all'})
-        try:
-            res.raise_for_status()
-        except requests.exceptions.HTTPError as err:
-            print(err)
-            return None
+        res.raise_for_status()
         pulls = res.json()
         pulls = list(map(lambda p: p['url'], pulls))
         return pulls
 
     def _get_review_comments_url(self, pr_url):
         res = self._session.get(pr_url)
-        try:
-            res.raise_for_status()
-        except requests.exceptions.HTTPError as err:
-            print(err)
-            return None
+        res.raise_for_status()
         pr = res.json()
         return pr['comments_url']
 
     def _get_pr_comments(self, comments_url):
         res = self._session.get(comments_url)
-        try:
-            res.raise_for_status()
-        except requests.exceptions.HTTPError as err:
-            print(err)
-            return None
+        res.raise_for_status()
         comments = res.json()
         comments = GithubScores._parse_comments(comments)
         return comments

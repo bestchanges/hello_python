@@ -12,7 +12,8 @@ TOKEN_FILE = 'credentials/token.pickle'
 
 
 def get_creds():
-    """Shows basic usage of the Sheets API.
+    """
+    Shows basic usage of the Sheets API.
     Prints values from a sample spreadsheet.
     """
     creds = None
