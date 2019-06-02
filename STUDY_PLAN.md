@@ -5,23 +5,6 @@
 
 # Unscheduled sessions
 
-## Python Basics (continue) 
-- variables scope 
-  - https://www.youtube.com/watch?v=QVdf0LgmICw 
-  - [Introduction to namespaces and scopes](https://nbviewer.jupyter.org/github/rasbt/python_reference/blob/master/tutorials/scope_resolution_legb_rule.ipynb#introduction)
-  - https://www.programiz.com/python-programming/namespace
-- Decorators with arguments: https://www.youtube.com/watch?v=KlBPCzcQNU8
-- free variables
-  - closures https://www.youtube.com/watch?v=swU3c34d2NQ
-- sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
-- iterators, generators 
-  - also class generators
-  - https://wiki.python.org/moin/Generators
-  - https://habr.com/ru/post/337314/
-  - https://docs.python.org/3/howto/functional.html#passing-values-into-a-generator
-- context managers (with statement) https://docs.python.org/3/reference/compound_stmts.html#the-with-statement
-
-
 ## Good console app
 - run own console with https://docs.python.org/3/library/readline.html
 - read CLI args
@@ -83,18 +66,57 @@
   - https://docs.python.org/3/library/dis.html
 
 # Backlog
-
+- Basic structure types 
+    - [in 13] sequence types [list, tuple, range](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range)
+    - [in 13] [string is a sequence](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
+    - Binary Sequence Types — [bytes, bytearray, memoryview](https://docs.python.org/3/library/stdtypes.html#binary-sequence-types-bytes-bytearray-memoryview)
+    - Set types [set, frozenset](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset)
+    - Mapping Types — [dict](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
+    - [tutorial](https://docs.python.org/3/tutorial/datastructures.html)
+- Container datatypes [collections](https://docs.python.org/3/library/collections.html)
+    - defaultdict(int)
+    - deque
+    - ChainMap
+    - Named Tuple
+    - OrderedDict 
+        - [not redundant even after 3.7](https://stackoverflow.com/questions/50872498/will-ordereddict-become-redundant-in-python-3-7)
+    - Counter
+- in core library:
+    - [heapq](https://docs.python.org/3.0/library/heapq.html)
+    - [bisect](https://
+    docs.python.org/3.0/library/bisect.html)
+    - [array](https://docs.python.org/3.0/library/array.html)
+    - [queue](https://docs.python.org/3.0/library/queue.html)
+    - [dataclasses](https://docs.python.org/3/library/dataclasses.html)
+- External
+    - [expiringdict](https://github.com/mailgun/expiringdict)
+    - io.StringIO
+    - ... what also?
+- iterators, generators 
+  - also class generators
+  - https://wiki.python.org/moin/Generators
+  - https://habr.com/ru/post/337314/
+  - https://docs.python.org/3/howto/functional.html#passing-values-into-a-generator
+- Decorators
+    - closures https://www.youtube.com/watch?v=swU3c34d2NQ
+    - Decorators with arguments: https://www.youtube.com/watch?v=KlBPCzcQNU8
 - asyncio continue
   - Exceptions handling
   - sync-async code marriage
-- collections https://docs.python.org/3/library/collections.html
-  - defaultdict(int)
-  - deque
-  - OrderedDict - every dict sinse 3.7
-  - Counter
+- data manipulation
+  - [copy](https://docs.python.org/3.0/library/copy.html)
+  - sorting https://www.youtube.com/watch?v=D3JvDWO-BY4
+  - caching with [weakref](https://docs.python.org/3.0/library/weakref.html)
+  - [itertools](https://docs.python.org/3.7/library/itertools.html)
+- GUI with Tk
+  - https://docs.python.org/3.0/library/tk.html
+- Internationalization
+  - https://docs.python.org/3.0/library/i18n.html  
+- scheduled execution [sched](https://docs.python.org/3.0/library/sched.html)
+- repr vs str
+  - https://docs.python.org/3.0/library/reprlib.html
 - HTTP load tests [Asyncio/Aiohttp — предел производительности](https://www.youtube.com/watch?v=ctLi6_mrPLc) youtube, ru, 20m
 - functional programming https://docs.python.org/3/howto/functional.html
-- itertools https://docs.python.org/3.7/library/itertools.html
 - defaultdict() https://docs.quantifiedcode.com/python-anti-patterns/correctness/not_using_defaultdict.html
 - datetime
 - inspect, tokenize
@@ -108,13 +130,16 @@
 - execution model https://docs.python.org/3/reference/executionmodel.html
 - create packages distributions
   - publish package with setuptools
-- type hints https://www.python.org/dev/peps/pep-0484/
+- type hints 
+  - https://docs.python.org/3/library/typing.html
+  - https://www.python.org/dev/peps/pep-0484/
 - docker+python
 - docker-compose
 - queues
   - rabbitmq
   - nameko
 - QA automation
+- else statements in loops
 - test performance of web-service
 - Django web site
 - desktop UI (with Tkinter?)
@@ -127,12 +152,17 @@
 - https://github.com/pyenv/pyenv  
 - https://tox.readthedocs.io/en/latest/
 - [pipenv, Kenneth Reitz (youtube, 30m)](https://www.youtube.com/watch?v=GBQAKldqgZs)
-- Sanic
+- [Sanic](https://sanic.readthedocs.io/en/latest/)
+- https://www.pygame.org/tags/all
+
 Denis Tomilin:
 - Django REST Framework, Django Channels. 
 - Отдельно советую ввести в курс дела CGI, WSGI, AG
 - Я бы советовал пройти весь development cycle разработки веб-приложения используя стек Python + Django + DRF, с деплойментом и рассказ про опции: разворачивать это дело на хероку, на машинке с gunicorn/uwsgi + nginx, на k8s
 - Data Visualization VEGA https://www.youtube.com/watch?v=ms29ZPUKxbU
+
+# Interresting
+- [Сколько объектов выделяет Python, выполняя скрипты?](https://habr.com/ru/post/418305/) 
 
 # Backlog projects
 + [Python Face Recognition Tutorial](https://www.youtube.com/watch?v=QSTnwsZj2yc), youtube, en, 30m - контент так себе, а вот библиотеку надо попробовать

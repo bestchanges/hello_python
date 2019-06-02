@@ -101,3 +101,10 @@ Project
 ## [Session 11](sessions/11/) aiohttp
 - client
 - server
+
+# [Session 12](sessions/12/) Python Basics (continue)
+- variables scope
+- context managers
+
+# [Session 13](sessions/13/) data structures 
+- 
