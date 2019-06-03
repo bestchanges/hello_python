@@ -47,7 +47,7 @@ def get_sheet_data(spreadsheet_id, range_name):
 
 
 def set_sheet_data(spreadsheet_id, range_name, values):
-    body = {'majorDimension': 'COLUMNS', 'values': [values]}
+    body = {'majorDimension': 'COLUMNS', 'values': values}
     service = build('sheets', 'v4', credentials=get_creds())
     service.spreadsheets().values().update(
         spreadsheetId=spreadsheet_id, range=range_name,
