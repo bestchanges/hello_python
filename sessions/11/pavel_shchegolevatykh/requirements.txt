@@ -1,0 +1,5 @@
+aiohttp
+pytest-aiohttp
+pytest
+jsonschema
+aiofiles
