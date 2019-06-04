@@ -33,3 +33,9 @@ print("Only in set 1: ")
 print(set1 - set2)
 print("Unique in each set: ")
 print(set1 ^ set2)
+
+k2 = set(k2)
+k2 -= set2
+print("k2 without set1: ")
+print(k2)
+print(len(k2))
