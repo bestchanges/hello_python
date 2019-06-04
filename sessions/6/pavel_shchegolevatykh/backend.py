@@ -43,6 +43,7 @@ def save_to_file():
 
 def read_from_file():
     with open('todos.json', 'r') as file_handle:
+        global todos
         todos = json.load(file_handle)
 
 
@@ -68,6 +69,7 @@ def put_items(todo_id):
     validate(instance=todo, schema=update_schema)
     for t in todos:
         t.update(('completed', todo['completed']) for k, v in t.items() if k == 'id' and v == todo_id)
+        t.update(('title', todo['title']) for k, v in t.items() if k == 'id' and v == todo_id)
     save_to_file()
     return jsonify(todo)
 
