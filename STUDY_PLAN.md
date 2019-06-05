@@ -148,12 +148,18 @@
   - https://landscape.io/#
   - https://www.python.org/dev/peps/pep-0008/
   - pycodestyle
+- overview of https://docs.python.org/3/library/functions.html  
 - [breakpoint(), since 3.7](https://docs.python.org/dev/library/functions.html#breakpoint)
+- Python 3.8 is coming: https://docs.python.org/3.8/whatsnew/3.8.html
 - https://github.com/pyenv/pyenv  
 - https://tox.readthedocs.io/en/latest/
 - [pipenv, Kenneth Reitz (youtube, 30m)](https://www.youtube.com/watch?v=GBQAKldqgZs)
 - [Sanic](https://sanic.readthedocs.io/en/latest/)
 - https://www.pygame.org/tags/all
+- [Garbage Collection](https://docs.python.org/3/faq/design.html?highlight=garbage%20collect#how-does-python-manage-memory)
+- Variables and pointers in Python, [habr](https://habr.com/en/company/mailru/blog/454324/)
+- Lots of interresting things in [https://docs.python.org/3/faq/index.html]
+- (Learning neural networks within Jupyter Notebook, youtube 1h)[https://www.youtube.com/watch?v=qomCrfctf70&list=PLQTGSfnaYlCuonYGidCFg1aqii9a6cqL4&index=8]
 
 Denis Tomilin:
 - Django REST Framework, Django Channels. 
