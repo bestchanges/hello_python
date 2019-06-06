@@ -6,7 +6,7 @@
     - comprehensions
 
 ## Screencast
-[![Hello Python Session](http://img.youtube.com/vi//0HAa7Olbf8g/0.jpg)](http://www.youtube.com/watch?v=0HAa7Olbf8g "Hello Python Session")
+[![Hello Python Session](http://img.youtube.com/vi/0HAa7Olbf8g/0.jpg)](http://www.youtube.com/watch?v=0HAa7Olbf8g "Hello Python Session")
 [![Hello Python Session](http://img.youtube.com/vi/zxKy28rxuRs/0.jpg)](http://www.youtube.com/watch?v=zxKy28rxuRs "Hello Python Session")
 
 ## Materials
