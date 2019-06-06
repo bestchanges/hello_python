@@ -115,3 +115,11 @@ Project
 - bytes, bytearray
 - memoryview
 - set, frozenset
+
+## [Session 15](sessions/15/)  data structures (continue)
+
+- Structure types
+    - dict
+    - list
+    - comprehensions
+
