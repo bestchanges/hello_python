@@ -1,4 +1,5 @@
 import logging
+from datetime import datetime
 
 from google_api_connector import get_sheet_data, set_sheet_data
 from githubscores import GithubScores
@@ -24,6 +25,7 @@ LINES = 300
 RANGE_NAME = f'{COLUMN_NAME}2:{COLUMN_NAME}{LINES+1}'
 RANGE_GITHUB = f'{COLUMN_GITHUB}2:{COLUMN_GITHUB}{LINES+1}'
 RANGE_SCORE = f'{COLUMN_SCORE}2:{COLUMN_SCORE}{LINES+1}'
+RANGE_UPDATED_MARK = 'k1:k1'
 
 
 if __name__ == '__main__':
@@ -46,5 +48,6 @@ if __name__ == '__main__':
 
     scores = [total_scores.get(user[0] if user else None, 0) for user in users]
 
-    set_sheet_data(SPREADSHEET_ID, RANGE_SCORE, scores)
+    set_sheet_data(SPREADSHEET_ID, RANGE_SCORE, [scores])
+    set_sheet_data(SPREADSHEET_ID, RANGE_UPDATED_MARK, [[datetime.now().isoformat()]])
     logger.info("Completed. OK")

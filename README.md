@@ -102,9 +102,24 @@ Project
 - client
 - server
 
-# [Session 12](sessions/12/) Python Basics (continue)
+## [Session 12](sessions/12/) Python Basics (continue)
 - variables scope
 - context managers
 
-# [Session 13](sessions/13/) data structures 
-- 
+## [Session 13](sessions/13/) data structures 
+- tuple, list, range, string 
+
+## [Session 14](sessions/14/)  data structures (continue)
+
+- string (continue)
+- bytes, bytearray
+- memoryview
+- set, frozenset
+
+## [Session 15](sessions/15/)  data structures (continue)
+
+- Structure types
+    - dict
+    - list
+    - comprehensions
+

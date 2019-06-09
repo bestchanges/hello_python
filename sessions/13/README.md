@@ -10,6 +10,7 @@
 - Basic structure types 
     - sequence types [list, tuple, range](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range)
         - article: [range is NOT iterator/generator](https://treyhunner.com/2018/02/python-range-is-not-an-iterator/)
+        - [tip: lists are for looping; tuples for structs](https://stackoverflow.com/a/16941245/10519787)
     - [string is a sequence](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
 
 
