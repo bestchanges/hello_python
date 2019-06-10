@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+{% block title %}Chat{% endblock %}
+
+{% block head %}
+    {{ super() }}
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}">
+	<script src="{{ url_for('static', filename = 'main.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+<body>
+		  <div class="container clearfix">
+			<div class="people-list" id="people-list">
+			  <ul id="list-users" class="list">
+			  {% for user in users %}
+				<li class="clearfix">
+				  <img class="avatar" src="https://petition.dailytrust.com/storage/petition_avatar.png" alt="avatar" />
+				  <div class="about">
+					<div class="name">{{ user.user_name }}</div>
+					<div class="status">
+					  <i class="fa fa-circle online"></i> online
+					</div>
+				  </div>
+				</li>
+			  {% endfor %}
+			  </ul>
+			</div>
+
+			<div class="chat">
+			  <div class="chat-history" data-user-id="{{ user_id }}">
+				<ul style="list-style-type: none; padding-left: 0px;">
+					{% for message in messages %}
+					  <li class="clearfix">
+						  {% if user_id == message.user_id %}
+							<div class="message-data">
+							  <span class="message-data-time" >{{ message.time }}</span>
+							  <span class="message-data-name" >{{ message.username }}</span> <i class="fa fa-circle online"></i>
+							</div>
+						    <div class="message my-message">
+						      {{ message.message }}
+						    </div>
+						  {% else %}
+							<div class="message-data align-right">
+							  <span class="message-data-name" > <i class="fa fa-circle me"></i> {{ message.username }}</span>
+							  <span class="message-data-time" >{{ message.time }}</span>
+							</div>
+							<div class="message other-message float-right">
+							  {{ message.message }}
+							</div>
+							{% endif %}
+					  </li>
+					{% endfor %}
+				</ul>
+
+			  </div> <!-- end chat-history -->
+
+			  <div class="chat-message clearfix">
+				<textarea name="message-to-send" id="message-to-send" placeholder ="Type your message" rows="3"></textarea>
+				<button id="send-button">Send</button>
+				<button id="logout-button" style="float: left; color: coral;">Logout</button>
+			  </div> <!-- end chat-message -->
+
+			</div> <!-- end chat -->
+		  </div> <!-- end container -->
+
+	</body>
+{% endblock %}
