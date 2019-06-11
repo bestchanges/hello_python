@@ -92,6 +92,8 @@
     - [expiringdict](https://github.com/mailgun/expiringdict)
     - io.StringIO
     - ... what also?
+- [decimal calcs](https://docs.python.org/3.7/library/decimal.html)
+- [Rounding in Python](https://realpython.com/python-rounding/)
 - iterators, generators 
   - also class generators
   - https://wiki.python.org/moin/Generators
