@@ -146,6 +146,11 @@
 - Django web site
 - desktop UI (with Tkinter?)
 - ML
+- configuration management:
+  - https://docs.python.org/3/library/configparser.html
+  - https://github.com/bw2/ConfigArgParse
+  - https://stackoverflow.com/a/10551389/10519787
+  - https://github.com/theskumar/python-dotenv
 - clean code: codestyle
   - https://landscape.io/#
   - https://www.python.org/dev/peps/pep-0008/

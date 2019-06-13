@@ -2,3 +2,5 @@ version: "3.4"
 services:
   app:
     build: .
+    environment:
+      LEVEL: DEBUG
