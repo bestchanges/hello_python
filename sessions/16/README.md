@@ -5,7 +5,7 @@
     - deque
 
 ## Screencast
-[![Hello Python Session](http://img.youtube.com/vi/guVJRbGVV-4/0.jpg)](http://www.youtube.com/watch?v=guVJRbGVV-4 "Hello Python Session")
+[![Hello Python Session](http://img.youtube.com/vi/xnBGnse6kGk/0.jpg)](http://www.youtube.com/watch?v=xnBGnse6kGk "Hello Python Session")
 
 ## Materials
 
