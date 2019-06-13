@@ -11,12 +11,16 @@ create_and_add_person('masha', 'zhukova', 21)
 create_and_add_person('klava', 'zapolskaya', 34)
 create_and_add_person('onufriy', 'rebrov', 50)
 
-print(people)
+print('initial list of people:')
+for person in people:
+    print(person)
 
 people.sort(key=lambda x: x['name']+x['surname'])
 print('sorted by full name:')
-print(people)
+for person in people:
+    print(person)
 
 people_by_age = sorted(people, key=lambda x: x['age'])
 print('sorted by age:')
-print(people_by_age)
+for person in people_by_age:
+    print(person)
