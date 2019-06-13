@@ -1,4 +1,4 @@
-# Session 16 collections
+# Session 17 collections (continue)
 
 - Container datatypes [collections](https://docs.python.org/3/library/collections.html)
     - Named Tuple
@@ -9,7 +9,7 @@
 
 ## Materials
 
-- [Jupyter Notebook](session_16.ipynb)
+- [Jupyter Notebook](session_17.ipynb)
 
 ## Project
 ### Люди как Named Tuples
