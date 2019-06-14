@@ -123,3 +123,8 @@ Project
     - list
     - comprehensions
 
+## [Session 16](sessions/16/) collections
+
+- Container datatypes
+    - Named Tuple
+    - deque
