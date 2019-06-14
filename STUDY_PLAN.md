@@ -144,18 +144,13 @@
 - QA automation
 - else statements in loops
 - test performance of web-service
-- Django web site
 - desktop UI (with Tkinter?)
-- ML
+- https://docs.python.org/3/library/csv.html
 - configuration management:
   - https://docs.python.org/3/library/configparser.html
   - https://github.com/bw2/ConfigArgParse
   - https://stackoverflow.com/a/10551389/10519787
   - https://github.com/theskumar/python-dotenv
-- clean code: codestyle
-  - https://landscape.io/#
-  - https://www.python.org/dev/peps/pep-0008/
-  - pycodestyle
 - overview of https://docs.python.org/3/library/functions.html  
 - [breakpoint(), since 3.7](https://docs.python.org/dev/library/functions.html#breakpoint)
 - Python 3.8 is coming: https://docs.python.org/3.8/whatsnew/3.8.html

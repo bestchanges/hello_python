@@ -1,27 +1,16 @@
-# Session 17 collections (continue)
+# Session 17 Code Style
 
-- Container datatypes [collections](https://docs.python.org/3/library/collections.html)
-    - Named Tuple
-    - deque
+- clean code: codestyle
+- PEP-8
+- Pythonic vs Non-Pythonic
 
 ## Screencast
-[![Hello Python Session](http://img.youtube.com/vi/guVJRbGVV-4/0.jpg)](http://www.youtube.com/watch?v=guVJRbGVV-4 "Hello Python Session")
 
 ## Materials
 
-- [Jupyter Notebook](session_17.ipynb)
+- https://www.python.org/dev/peps/pep-0008/
+- pycodestyle
+- Но код стайл это не только PEP8. Об этом смотрите [в докладе Реймонда](https://www.youtube.com/watch?v=wf-BqAjZb8M&list=PL695GIIYoAhbrVyzkqYvVuNqEBHqnNqQl&index=22&t=0s)
+- https://landscape.io/
 
 ## Project
-### Люди как Named Tuples
-Загрузите список людей из CSV файла используя Named Tuple как класс.
-- Выведите средний возраст для женщин из этого файла.
-- Выведите топ-3 человека по росту 
-
-### deque
-Заполните колоду карт используя deque. 
-- Перетасуйте
-- Сдвиньте в произвольном месте
-- Перебирая колоду, разложите черные и красные карты в разные колоды
-- сложите их вместе в одну колоду
-- Перетасуйте
-- Снимите первую карту сверху, переложите её вниз
