@@ -99,6 +99,7 @@
   - https://wiki.python.org/moin/Generators
   - https://habr.com/ru/post/337314/
   - https://docs.python.org/3/howto/functional.html#passing-values-into-a-generator
+- how to name a variable?  
 - Decorators
     - closures https://www.youtube.com/watch?v=swU3c34d2NQ
     - Decorators with arguments: https://www.youtube.com/watch?v=KlBPCzcQNU8
@@ -143,18 +144,13 @@
 - QA automation
 - else statements in loops
 - test performance of web-service
-- Django web site
 - desktop UI (with Tkinter?)
-- ML
+- https://docs.python.org/3/library/csv.html
 - configuration management:
   - https://docs.python.org/3/library/configparser.html
   - https://github.com/bw2/ConfigArgParse
   - https://stackoverflow.com/a/10551389/10519787
   - https://github.com/theskumar/python-dotenv
-- clean code: codestyle
-  - https://landscape.io/#
-  - https://www.python.org/dev/peps/pep-0008/
-  - pycodestyle
 - overview of https://docs.python.org/3/library/functions.html  
 - [breakpoint(), since 3.7](https://docs.python.org/dev/library/functions.html#breakpoint)
 - Python 3.8 is coming: https://docs.python.org/3.8/whatsnew/3.8.html
@@ -174,16 +170,5 @@ Denis Tomilin:
 - Я бы советовал пройти весь development cycle разработки веб-приложения используя стек Python + Django + DRF, с деплойментом и рассказ про опции: разворачивать это дело на хероку, на машинке с gunicorn/uwsgi + nginx, на k8s
 - Data Visualization VEGA https://www.youtube.com/watch?v=ms29ZPUKxbU
 
-# Interresting
+# Interesting
 - [Сколько объектов выделяет Python, выполняя скрипты?](https://habr.com/ru/post/418305/) 
-
-# Backlog projects
-+ [Python Face Recognition Tutorial](https://www.youtube.com/watch?v=QSTnwsZj2yc), youtube, en, 30m - контент так себе, а вот библиотеку надо попробовать
-+ trading bot
-+ todoist_automation
-+ currency_exchange_rates
-+ gimblet_online_game
-+ object recognition
-+ smart home gadgets
-+ chat bot (telegram, alice, skype)
-- https://www.home-assistant.io/

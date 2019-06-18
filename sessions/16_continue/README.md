@@ -1,19 +1,19 @@
-# Session 16 collections
+# Session 17 collections (continue)
 
 - Container datatypes [collections](https://docs.python.org/3/library/collections.html)
     - Named Tuple
     - deque
 
 ## Screencast
-[![Hello Python Session](http://img.youtube.com/vi/xnBGnse6kGk/0.jpg)](http://www.youtube.com/watch?v=xnBGnse6kGk "Hello Python Session")
+[![Hello Python Session](http://img.youtube.com/vi/guVJRbGVV-4/0.jpg)](http://www.youtube.com/watch?v=guVJRbGVV-4 "Hello Python Session")
 
 ## Materials
 
-- [Jupyter Notebook](session_16.ipynb)
+- [Jupyter Notebook](session_17.ipynb)
 
 ## Project
 ### Люди как Named Tuples
-Загрузите список людей из CSV файла people.csv используя named tuple.
+Загрузите список людей из CSV файла используя Named Tuple как класс.
 - Выведите средний возраст для женщин из этого файла.
 - Выведите топ-3 человека по росту 
 
