@@ -128,3 +128,9 @@ Project
 - Container datatypes
     - Named Tuple
     - deque
+
+## [Session 17](sessions/17/) Code Style
+
+- clean code: codestyle
+- PEP-8
+- Pythonic vs Non-Pythonic
