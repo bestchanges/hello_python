@@ -11,7 +11,10 @@
 ## Materials
 
 - https://www.python.org/dev/peps/pep-0008/
-- Но код стайл это не только PEP8. Об этом смотрите [в докладе Реймонда](https://www.youtube.com/watch?v=wf-BqAjZb8M&list=PL695GIIYoAhbrVyzkqYvVuNqEBHqnNqQl&index=22&t=0s)
+- Но код стайл это не только PEP8. 
+- Об этом смотрите в докладе Реймонда [ "Beyond PEP 8 -- Best practices for beautiful intelligible code"](https://www.youtube.com/watch?v=wf-BqAjZb8M&list=PL695GIIYoAhbrVyzkqYvVuNqEBHqnNqQl&index=22&t=0s)<br>
+  Первые полчаса доклада довольно нудные, можно промотать по-быстрому. Там речь о том, как 
+  сделать Java-style code into Pythonic.
 - https://landscape.io/
 - SonarQube
 
