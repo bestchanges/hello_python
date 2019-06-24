@@ -1,12 +1,7 @@
 class MyDefaultDict(dict):
 
     def __init__(self, *args, **kwargs):
-        if 'default' in kwargs:
-            self.default = kwargs['default']
-            # removing extra arg so we won't affect original arguments for dict
-            del kwargs['default']
-        else:
-            self.default = None
+        self.default = kwargs.pop('default', None)
         dict.__init__(self, *args, **kwargs)
 
     def __missing__(self, key):
