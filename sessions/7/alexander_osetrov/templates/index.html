@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Chat</title>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<h2>WebSockets based chat test</h2>
+<body>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+	var socket = io.connect('http://127.0.0.1:5000');
+
+	socket.on('response', function(msg) {
+		$("#messages").append('<br>' + $('<div/>').text('Chat Message: ' + msg).html());
+	});
+
+    $('form#message').submit(function(event) {
+        socket.emit('message', {data: $('#send_message').val()});
+        return false;
+    });
+
+    $('form#join').submit(function(event) {
+        socket.emit('join', $('#join_room').val());
+        return false;
+    });
+
+    $('form#leave').submit(function(event) {
+        socket.emit('leave', $('#leave_room').val());
+        return false;
+    });
+
+    $('form#send_to_room').submit(function(event) {
+        socket.emit('room_message', {room: $('#room_name').val(), data: $('#room_message').val()});
+        return false;
+    });
+
+});
+</script>
+<form id="message">
+    <input type="text" name="send_message" id="send_message">
+    <input type="submit" value="Send Message">
+</form>
+<form id="join">
+    <input type="text" name="join_room" id="join_room">
+    <input type="submit" value="Join Room">
+</form>
+<form id="leave">
+    <input type="text" name="leave_room" id="leave_room">
+    <input type="submit" value="Leave Room">
+</form>
+<form id="send_to_room">
+    <input type="text" name="room_name" id="room_name">
+    <input type="text" name="room_message" id="room_message">
+    <input type="submit" value="Send To Room">
+</form>
+<h3>Messages:</h3>
+<div id="messages"></div>
+</body>
+</html>
