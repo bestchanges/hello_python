@@ -1,4 +1,4 @@
-# Django models and views
+# Django models, admin, views
 - tutorial part 2 
 - tutorial part 3 (partly)
 

@@ -1,4 +1,4 @@
-# Django basics
+# Django start project, routes, database, models
 - tutorial part 1
 - tutorial part 2 (partly)
 

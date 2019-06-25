@@ -1,4 +1,4 @@
-# Django models and views
+# Django Templates
 - tutorial part 3
 - tutorial part 4
 
