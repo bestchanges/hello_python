@@ -4,7 +4,6 @@ from collections import defaultdict
 
 def get_repositories(stars=30000):
     request = requests.get(f"https://api.github.com/search/repositories?q=stars:>={stars}&order=desc")
-
     return request.json()
 
 
