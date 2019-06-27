@@ -66,6 +66,7 @@
   - https://docs.python.org/3/library/dis.html
 
 # Backlog
+- functools (also with total_ordering())
 - Basic structure types 
     - [in 13] sequence types [list, tuple, range](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range)
     - [in 13] [string is a sequence](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
