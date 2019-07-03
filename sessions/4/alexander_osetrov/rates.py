@@ -4,10 +4,30 @@ from sys import exit
 
 
 currency_data = "./exchange_rate.json"
+rate_pattern = r"[A-Z]{3}/[A-Z]{3}=.+"
+
+# Regex pattern for checking the entered new exchange rate
+# [A-Z]{3} - matches a single character present in the string in the range between A and Z exactly 3 times
+# / - matches the character '/' literally
+# = - matches the character '=' literally
+# .+ matches any character between one and unlimited times as many times as possible
+
+convert_pattern = r"\d+(\.\d+)?\s[A-Z]{3}$"
+
+# Regex pattern for checking the entered currency convert request
+# \d+ - matches a digit between one and unlimited times, as many times as possible
+# (\.\d+)? - capturing group (matches the character '.' and a digit between one and unlimited times) matches
+# between zero and one times, as many times as possible
+# \s -  matches any whitespace character
+# [A-Z]{3}$ - matches a single character present in the string in the range between A and Z exactly 3 times
+# at the end of a line
+#
+# Online regex tester and debugger: PHP, PCRE, Python, Golang and JavaScript:
+# https://regex101.com/#python
 
 
 def parse_new_rate(rate):
-    if match(r"[A-Z]{3}/[A-Z]{3}=.+", rate):
+    if match(rate_pattern, rate):
         currency, value = rate.split("=")
         try:
             new_rate = {currency: float(value)}
@@ -20,7 +40,7 @@ def parse_new_rate(rate):
 
 
 def parse_convert_request(convert_request):
-    if match(r"\d+(\.\d+)?\s[A-Z]{3}$", convert_request):
+    if match(convert_pattern, convert_request):
         amount, currency = convert_request.split()
         to_convert = {'amount': float(amount),
                       'from': currency}
