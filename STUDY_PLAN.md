@@ -67,6 +67,12 @@
 
 # Backlog
 - functools (also with total_ordering())
+- dataclasses
+- collections.abc
+- decimal
+- clean code
+  - flake8
+  - 
 - Functional Programming https://docs.python.org/3/howto/functional.html
 - Basic structure types 
     - [in 13] sequence types [list, tuple, range](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range)
@@ -101,7 +107,8 @@
   - https://wiki.python.org/moin/Generators
   - https://habr.com/ru/post/337314/
   - https://docs.python.org/3/howto/functional.html#passing-values-into-a-generator
-- how to name a variable?  
+- how to name a variable?
+- [Python Classes Without Boilerplate](https://github.com/python-attrs/attrs)  
 - Decorators
     - closures https://www.youtube.com/watch?v=swU3c34d2NQ
     - Decorators with arguments: https://www.youtube.com/watch?v=KlBPCzcQNU8
