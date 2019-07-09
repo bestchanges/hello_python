@@ -134,3 +134,7 @@ Project
 - clean code: codestyle
 - PEP-8
 - Pythonic vs Non-Pythonic
+
+## [Session 18](sessions/18/) Code Style (continue)
+
+- PEP-8

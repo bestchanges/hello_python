@@ -67,6 +67,7 @@
 
 # Backlog
 - functools (also with total_ordering())
+- Functional Programming https://docs.python.org/3/howto/functional.html
 - Basic structure types 
     - [in 13] sequence types [list, tuple, range](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range)
     - [in 13] [string is a sequence](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
@@ -143,6 +144,8 @@
   - rabbitmq
   - nameko
 - QA automation
+  - https://github.com/Rhoynar/python-selenium-bdd
+  - https://behave.readthedocs.io/en/latest/
 - else statements in loops
 - test performance of web-service
 - desktop UI (with Tkinter?)
