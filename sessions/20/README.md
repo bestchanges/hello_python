@@ -1,4 +1,4 @@
-# Session 20 Creating good app
+# Session 20 logging, command line arguments, configuration 
 
 ## Screencast
 [![Hello Python Session](http://img.youtube.com/vi/-hdH-vH8keo/0.jpg)](http://www.youtube.com/watch?v=-hdH-vH8keo "Hello Python Session")

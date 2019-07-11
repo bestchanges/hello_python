@@ -7,7 +7,9 @@
 - Counter
 
 ## Screencast
+No screencast due technical problems.
 
 ## Materials
+- https://docs.python.org/3/library/collections.html
 
 ## Project

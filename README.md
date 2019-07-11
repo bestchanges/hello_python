@@ -137,4 +137,6 @@ Project
 
 ## [Session 18](sessions/18/) Code Style (continue)
 
-- PEP-8
+## [Session 19](sessions/19/) collections (continue)
+
+## [Session 20](sessions/20/) logging, command line arguments, configuration 
