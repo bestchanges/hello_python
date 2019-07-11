@@ -4,3 +4,4 @@ venv*
 /requirements.txt
 .pytest_cache
 __pycache__
+*.log

@@ -7,9 +7,6 @@
 
 ## Good console app
 - run own console with https://docs.python.org/3/library/readline.html
-- read CLI args
-- logging
-
 - project: command line currency converter (from session 4)  
   - available commands generated on fly from object
   - support of command line options
@@ -157,11 +154,6 @@
 - test performance of web-service
 - desktop UI (with Tkinter?)
 - https://docs.python.org/3/library/csv.html
-- configuration management:
-  - https://docs.python.org/3/library/configparser.html
-  - https://github.com/bw2/ConfigArgParse
-  - https://stackoverflow.com/a/10551389/10519787
-  - https://github.com/theskumar/python-dotenv
 - overview of https://docs.python.org/3/library/functions.html  
 - [breakpoint(), since 3.7](https://docs.python.org/dev/library/functions.html#breakpoint)
 - Python 3.8 is coming: https://docs.python.org/3.8/whatsnew/3.8.html
