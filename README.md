@@ -136,7 +136,6 @@ Project
 - Pythonic vs Non-Pythonic
 
 ## [Session 18](sessions/18/) Code Style (continue)
-
 ## [Session 19](sessions/19/) collections (continue)
-
 ## [Session 20](sessions/20/) logging, command line arguments, configuration 
+## [Session 21](sessions/21/) Parallel execution - GIL  

@@ -24,12 +24,6 @@
 - docstrings
 - doc generation
 
-## Parallel execution 
-- threading 
-- multiprocessing
-- GIL 
-  - https://opensource.com/article/17/4/grok-gil
-
 ## Flask (continue)
 - flask: data storage
   - SQL Databases
