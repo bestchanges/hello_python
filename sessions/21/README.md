@@ -9,7 +9,7 @@
 ## Materials
 - https://realpython.com/python-gil/
 - https://opensource.com/article/17/4/grok-gil
-- [Understanding the Python GIL, David Beazley, 46min, en](https://www.youtube.com/watch?v=Obt-vMVdM8s)
+- [Understanding the Python GIL, David Beazley, 46min, en](https://www.youtube.com/watch?v=Obt-vMVdM8s) (also [graphs](http://www.dabeaz.com/GIL/gilvis/index.html))
 - [Python. Многопоточность и GIL, Сергей Лебедев, 1h20m, рус](hhttps://www.youtube.com/watch?v=oa9Tjs80n5E) (GIL starting from 56 min)
 
 ## Project
