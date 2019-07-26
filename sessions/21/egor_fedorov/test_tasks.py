@@ -18,7 +18,7 @@ def measure(runner_function, task_function, runner_kwargs=None):
     start_at = time.time()
     runner_function(task_function, **runner_kwargs if runner_kwargs else {})
     finished_at = time.time()
-    logging.info(f'For "{task_function.__name__}"  it takes {finished_at - start_at:.4f} runned with {runner_function.__name__}({runner_kwargs})')
+    logging.info(f'For {task_function.__name__:10}  it takes {finished_at - start_at:.4f} run with {runner_function.__name__}({runner_kwargs})')
 
 
 def run_single_thread(task_function):
@@ -45,9 +45,6 @@ def run_multiple_processes(task_function, num_processes):
 
 
 for task_function in file_io, sleep, decrement, product, network_io:
-    # run single
     measure(run_single_thread, task_function)
-    # run with threads
     measure(run_multiple_threads, task_function, runner_kwargs={'num_threads': 4})
-    # run with processess
     measure(run_multiple_processes, task_function, runner_kwargs={'num_processes': 4})

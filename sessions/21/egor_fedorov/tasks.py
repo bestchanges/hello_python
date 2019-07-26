@@ -28,7 +28,6 @@ def decrement(divided_by=1, times=1_000_000):
         c -= 1
 
 
-def product(divided_by=1, to=100_000):
-    result = 1
+def product(divided_by=1, to=1_000_000):
     for i in range(1, to, divided_by):
-        result *= i
+        i ** 4
