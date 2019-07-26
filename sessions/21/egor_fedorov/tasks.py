@@ -4,6 +4,12 @@ import time
 import requests
 
 
+def file_io_tiny(**kwargs):
+    kwargs['size'] = 1024
+    kwargs['times'] = 1000
+    file_io(**kwargs)
+
+
 def file_io(divided_by=1, times=100, content=b'x', size=1024*1024):
     for i in range(times // divided_by):
         with tempfile.TemporaryFile() as fp:

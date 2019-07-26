@@ -5,7 +5,7 @@ import time
 from multiprocessing.pool import Pool
 from threading import Thread
 
-from tasks import file_io, sleep, decrement, product, network_io
+from tasks import file_io, sleep, decrement, product, network_io, file_io_tiny
 import logging
 
 logging.basicConfig(
@@ -13,6 +13,7 @@ logging.basicConfig(
     datefmt="%H:%M:%S",
     level=logging.INFO
 )
+
 
 def measure(runner_function, task_function, runner_kwargs=None):
     start_at = time.time()
@@ -44,7 +45,7 @@ def run_multiple_processes(task_function, num_processes):
     pool.join()
 
 
-for task_function in file_io, sleep, decrement, product, network_io:
+for task_function in file_io, file_io_tiny, sleep, decrement, product, network_io:
     measure(run_single_thread, task_function)
     measure(run_multiple_threads, task_function, runner_kwargs={'num_threads': 4})
     measure(run_multiple_processes, task_function, runner_kwargs={'num_processes': 4})
