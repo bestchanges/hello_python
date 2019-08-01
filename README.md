@@ -139,3 +139,4 @@ Project
 ## [Session 19](sessions/19/) collections (continue)
 ## [Session 20](sessions/20/) logging, command line arguments, configuration 
 ## [Session 21](sessions/21/) Parallel execution - GIL  
+## [Session 22](sessions/22/) Parallel execution - threading  

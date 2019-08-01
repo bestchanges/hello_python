@@ -61,6 +61,7 @@
 - dataclasses
 - collections.abc
 - decimal
+- subprocess
 - clean code
   - flake8
   - 
