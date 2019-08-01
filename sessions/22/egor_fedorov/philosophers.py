@@ -45,8 +45,9 @@ class Fork:
 
 
 class Philosopher(Thread):
-    def __init__(self, name: str, fork_left: Fork = None, fork_right: Fork = None, max_eat_time=0.1) -> None:
+    def __init__(self, name: str, fork_left: Fork = None, fork_right: Fork = None, max_eat_time=1) -> None:
         super().__init__(name=name)
+        self.eat_times = 0
         self.max_eat_time = max_eat_time
         self.is_hungry = True
         if fork_right and fork_left:
@@ -60,28 +61,29 @@ class Philosopher(Thread):
 
     def run(self):
         while not dinner_is_over:
-            self.think()
             try:
                 self.eat()
             except StateError:
                 logging.info(f"Cannot eat")
                 self._put_forks()
+            self.think()
 
     def __str__(self):
         return self.name
 
     def think(self):
         think_time = self.max_eat_time * random.random() / 2
-        logging.info(f"Thinkning for {think_time:.2f} seconds")
+        logging.debug(f"Thinkning for {think_time:.2f} seconds")
         sleep(think_time)
 
     def eat(self):
-        logging.info("Try to take forks")
+        logging.debug("Try to take forks")
         self._take_forks()
         eat_time = self.max_eat_time * random.random()
-        logging.info(f"Eating for {eat_time:.2f} seconds")
+        logging.info(f"Start eating for {eat_time:.2f} seconds")
         sleep(eat_time)
         logging.info("End eating")
+        self.eat_times += 1
         self._put_forks()
 
     def _take_forks(self):
@@ -117,3 +119,5 @@ if __name__ == '__main__':
     dinner_is_over = True
     for philosopher in philosophers:
         philosopher.join()
+    for philosopher in philosophers:
+        logging.info(f"{philosopher} ate {philosopher.eat_times} times")
