@@ -63,16 +63,16 @@ def test_create_philosophers():
     assert p1.name == "a"
     assert len(p1.forks) == 2
     assert p1.forks[0].number == 1
-    assert p1.forks[1].number == 3
+    assert p1.forks[1].number == 2
 
     p2 = philosophers[1]
     assert p2.name == "b"
     assert len(p2.forks) == 2
-    assert p2.forks[0].number == 1
-    assert p2.forks[1].number == 2
+    assert p2.forks[0].number == 2
+    assert p2.forks[1].number == 3
 
     p3 = philosophers[2]
     assert p3.name == "c"
     assert len(p3.forks) == 2
-    assert p3.forks[0].number == 2
+    assert p3.forks[0].number == 1
     assert p3.forks[1].number == 3

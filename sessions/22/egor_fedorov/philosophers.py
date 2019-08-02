@@ -45,7 +45,7 @@ class Fork:
 
 
 class Philosopher(Thread):
-    def __init__(self, name: str, fork_left: Fork = None, fork_right: Fork = None, max_eat_time=1) -> None:
+    def __init__(self, name: str, fork_left: Fork = None, fork_right: Fork = None, max_eat_time=0.3) -> None:
         super().__init__(name=name)
         self.eat_times = 0
         self.max_eat_time = max_eat_time
@@ -105,7 +105,7 @@ def create_philosophers(names=PHILOSOPHER_NAMES):
     philosophers = [Philosopher(name) for number, name in enumerate(names)]
     for number, philosopher in enumerate(philosophers):
         right_fork = forks[number]
-        left_fork = forks[number - 1 if number > 0 else len(philosophers) - 1]
+        left_fork = forks[(number + 1) % len(philosophers)]
         philosopher.my_forks(left_fork, right_fork)
     return philosophers
 
