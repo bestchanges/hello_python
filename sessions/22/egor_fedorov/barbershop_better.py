@@ -2,7 +2,7 @@ import logging
 import random
 import time
 from queue import Queue, Full, Empty
-from threading import Thread, Condition
+from threading import Thread, Condition, Timer
 from time import sleep
 from typing import NamedTuple
 
@@ -23,7 +23,7 @@ CONFIGS = (
 
 logging.basicConfig(
     format='%(relativeCreated)6d %(threadName)15s: %(message)s',
-    level=logging.WARNING,
+    level=logging.DEBUG,
 )
 
 
@@ -78,6 +78,8 @@ class Client(Thread):
     def __str__(self):
         return self.name
 
+
+t = Timer()
 
 for config in CONFIGS:
     logging.warning("=" * 80)
