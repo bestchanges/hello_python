@@ -7,9 +7,6 @@
 
 ## Good console app
 - run own console with https://docs.python.org/3/library/readline.html
-- read CLI args
-- logging
-
 - project: command line currency converter (from session 4)  
   - available commands generated on fly from object
   - support of command line options
@@ -26,12 +23,6 @@
   - https://coverage.readthedocs.io/en/coverage-4.2/index.html
 - docstrings
 - doc generation
-
-## Parallel execution 
-- threading 
-- multiprocessing
-- GIL 
-  - https://opensource.com/article/17/4/grok-gil
 
 ## Flask (continue)
 - flask: data storage
@@ -67,6 +58,13 @@
 
 # Backlog
 - functools (also with total_ordering())
+- dataclasses
+- collections.abc
+- decimal
+- subprocess
+- clean code
+  - flake8
+  - 
 - Functional Programming https://docs.python.org/3/howto/functional.html
 - Basic structure types 
     - [in 13] sequence types [list, tuple, range](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range)
@@ -101,7 +99,8 @@
   - https://wiki.python.org/moin/Generators
   - https://habr.com/ru/post/337314/
   - https://docs.python.org/3/howto/functional.html#passing-values-into-a-generator
-- how to name a variable?  
+- how to name a variable?
+- [Python Classes Without Boilerplate](https://github.com/python-attrs/attrs)  
 - Decorators
     - closures https://www.youtube.com/watch?v=swU3c34d2NQ
     - Decorators with arguments: https://www.youtube.com/watch?v=KlBPCzcQNU8
@@ -150,11 +149,6 @@
 - test performance of web-service
 - desktop UI (with Tkinter?)
 - https://docs.python.org/3/library/csv.html
-- configuration management:
-  - https://docs.python.org/3/library/configparser.html
-  - https://github.com/bw2/ConfigArgParse
-  - https://stackoverflow.com/a/10551389/10519787
-  - https://github.com/theskumar/python-dotenv
 - overview of https://docs.python.org/3/library/functions.html  
 - [breakpoint(), since 3.7](https://docs.python.org/dev/library/functions.html#breakpoint)
 - Python 3.8 is coming: https://docs.python.org/3.8/whatsnew/3.8.html
