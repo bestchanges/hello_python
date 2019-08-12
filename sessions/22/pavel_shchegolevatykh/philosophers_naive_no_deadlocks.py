@@ -1,9 +1,10 @@
-# naive (wrong) solution
-# deadlock is possible on circular wait for each fork
-# if everyone picks up left fork first - everyone succeeds
-# if everyone picks up right fork first - deadlock
-# deadlock output example can be found in deadlock.log
-
+# circular wait condition never arises if we have GLOBAL ordering of resources in place
+# NO PROCESS can request a resource lower than it is already holding
+# e.g. in our case it  works fine if we always take lower fork first and then higher indexed fork
+# UNTIL the last philosopher
+# e.g. first one takes 0, 1, second  1, 2, third 2, 3 until we get to
+# the last philosopher who takes 4 and wants 0 and not vice versa
+# deadlock is possible because ordering is not the same
 
 import time
 import logging
@@ -55,8 +56,12 @@ class Philosopher(Thread):
     def run(self):
         while True:
             self.think()
-            self.take_fork(self.index)
-            self.take_fork((self.index + 1) % number_of_forks)
+            # self.take_fork(self.index) - the original condition that was before
+            # corrected condition we always take FIRST min fork between left and right
+            self.take_fork(min(self.index, (self.index + 1) % number_of_forks))
+            # self.take_fork((self.index + 1) % number_of_forks) - the original condition that was before
+            # corrected condition we always take SECOND max fork between left and right
+            self.take_fork(max(self.index, (self.index + 1) % number_of_forks))
             self.eat()
             self.put_fork((self.index + 1) % number_of_forks)
             self.put_fork(self.index)
